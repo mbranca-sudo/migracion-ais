@@ -1,0 +1,277 @@
+{
+  "DS1": [
+    {
+      "CIAASCOD": "0020",
+      "RAMOPCOD": "IC01",
+      "ACCION": "",
+      "EFECTANN": 2006,
+      "EFECTMES": 5,
+      "EFECTDIA": 1,
+      "SITUCFIN": "1",
+      "MODELO": "B1",
+      "RAZONLEG": "GGAL Seguros S.A. CUIT:30-66322131-7",
+      "DIRECLEG": "Tte. Gral. Juan Domingo Perón 430. Piso 7",
+      "CPRLEG": "C1038AAJ",
+      "LOCALRLEG": "Ciudad Autónoma de Bs.As.",
+      "PCIARLEG": "Buenos Aires",
+      "PAISRLEG": "Argentina",
+      "TELEFLEG": ".",
+      "TELE0810": "0800 555 9998",
+      "CONTACTO": "contactanos@galiciaseguros.com.ar",
+      "LOGO": "FirmaJV_1.png",
+      "LOGO1": "GSeguros03.png",
+      "LOGO2": "GSeguros03.png",
+      "CONSLOGO": "SI",
+      "PATHBANN": "\\\\PATH\\BANNER",
+      "NOMBBANN": "LeyendaVida.png",
+      "ORIGCOPIA": "C",
+      "NOMBFIRMA": "Jorge Valencia",
+      "CARGOFIRM": "Apoderado",
+      "PAGWEBVI": "www.galiciaseguros.com.ar",
+      "SECCICOD": 0,
+      "BANNBAN": ""
+    }
+  ],
+  "NYFM1165": [
+    { "CLAUSSUPL": "CL11" },
+    { "CLAUSSUPL": "CL7" },
+    { "CLAUSSUPL": "CG" },
+    { "CLAUSSUPL": "CL3" },
+    { "CLAUSSUPL": "CL4" }
+  ],
+  "NYFM1170": [
+    {
+      "CIAASCOD": "0020",
+      "RAMOPCOD": "IC01",
+      "POLIZANN": 94,
+      "POLIZSEC": 51542,
+      "CERTIPOL": 0,
+      "CERTIANN": 0,
+      "CERTISEC": 0,
+      "SUPLENUM": 0,
+      "MODELO": "B1",
+      "BANNBAN": "",
+      "LUGFECHA": "Buenos Aires, 18 de Abril de 2006",
+      "POLIZA": "IC01-94-51542",
+      "ENDOSO": "9",
+      "MOTEND": "CAMBIO DE FORMA DE PAGO",
+      "TITPLAN": "FORTUNE LIFE CLASSIC ANTIGUO",
+      "FECVIG": "01/05/2006",
+      "FECEMI": "01/05/2006",
+      "FECVTO": "01/06/9999",
+      "FECEND": "01/05/2006",
+      "MONCOD": "USD",
+      "MONEDA": "DOLARES E.E.U.U.",
+      "PAGOFORM": "TARJETA",
+      "PAGOFREC": "Mensual",
+      "POLIMAIL": "",
+      "POLITEL": "011  -5787-1058.",
+      "ASEGNOM": "MARIA SUSANA ORFILA",
+      "ASEGDOM": "JUAN AMANSO",
+      "ASEGDNUM": "1636",
+      "ASEGDPIS": "507",
+      "ASEGLOC": "CAPITAL FEDERAL",
+      "ASEGPROV": "CIUDAD DE BS. AS.",
+      "ASEGCPOS": "1107",
+      "ASEGFNAC": "28/10/1969",
+      "ASEGDOC": "DNI  20899533",
+      "ASEGSEX": "Masculino",
+      "ASEGDIES": "",
+      "ASEGPROF": "PROFESION",
+      "ASEGDEPO": "DEPORTE",
+      "ASEGFUMA": "No Fumador",
+      "ASEGESTI": "",
+      "ASEGLALO": "",
+      "TOMANOM": "",
+      "TOMADOM": "",
+      "TOMALOC": "",
+      "TOMAPROV": "",
+      "TOMACPOS": "",
+      "TOMADOC": "",
+      "CONYNOM": "",
+      "CONYFNAC": "",
+      "CONYDOC": "",
+      "CONYSEX": "",
+      "CONYPROF": "",
+      "CONYDEPO": "",
+      "CONYFUMA": "",
+      "AGENTCLA": "P1",
+      "AGENTCOD": "6969",
+      "AGENTNOM": "BULOS DE RECIO FABIANA G.",
+      "AGENTMAT": "0000500056",
+      "AGENTOFI": "0038",
+      "CENTRNOM": "POSADAS",
+      "ORDNUMJC": 0,
+      "CUENTANRO": "4338300001199164",
+      "TOMATEL": ""
+    }
+  ],
+  "M1171": [
+    {
+      "COBERSEC": 1,
+      "COBERPRI": "P",
+      "COBERCOD": 100,
+      "COBERDES": "MUERTE (3)",
+      "SUMASEG": "20.000,00",
+      "ORDNUMJC": 0
+    }
+  ],
+  "M1171B": [
+    {
+      "COBERSEC": 2,
+      "COBERPRI": "A",
+      "COBERCOD": 101,
+      "COBERDES": "MUERTE POR ACCIDENTE",
+      "SUMASEG": "20.000,00",
+      "ORDNUMJC": 0
+    },
+    {
+      "COBERSEC": 3,
+      "COBERPRI": "A",
+      "COBERCOD": 102,
+      "COBERDES": "INVALIDEZ TOTAL PERMANENTE POR ACCIDENTE",
+      "SUMASEG": "20.000,00",
+      "ORDNUMJC": 0
+    },
+    {
+      "COBERSEC": 4,
+      "COBERPRI": "A",
+      "COBERCOD": 103,
+      "COBERDES": "INVALIDEZ PARCIAL PERMANENTE POR ACCIDENTE",
+      "SUMASEG": "20.000,00",
+      "ORDNUMJC": 0
+    },
+    {
+      "COBERSEC": 5,
+      "COBERPRI": "A",
+      "COBERCOD": 104,
+      "COBERDES": "EXENCION DE PAGO DE PRIMAS (5)",
+      "SUMASEG": "",
+      "ORDNUMJC": 0
+    },
+    {
+      "COBERSEC": 6,
+      "COBERPRI": "A",
+      "COBERCOD": 105,
+      "COBERDES": "ENFERMEDADES CRITICAS",
+      "SUMASEG": "5.000,00",
+      "ORDNUMJC": 0
+    }
+  ],
+  "M1162": [
+    { "CLAUSDES": "CONDICIONES GENERALES" }
+  ],
+  "M1162B": [
+    { "CLAUSDES": "" },
+    { "CLAUSDES": "" },
+    { "CLAUSDES": "" },
+    { "CLAUSDES": "CLÁUSULA ADICIONAL Nº3" },
+    { "CLAUSDES": "CLÁUSULA ADICIONAL Nº 4" }
+  ],
+  "NYFM1171": [
+    {
+      "COBERSEC": 1,
+      "COBERPRI": "P",
+      "COBERCOD": 100,
+      "OPCIOCOD": "A",
+      "OPCIODES": "SIN REDUCCION A LOS 65 AÑOS",
+      "COBERDES": "MUERTE (3)",
+      "SUMASEG": "20.000,00",
+      "ORDNUMJC": 0
+    }
+  ],
+  "NYFM1171RF": [
+    {
+      "REFERSEC": 1,
+      "REFERTEX": "(1) Dentro de las Condiciones adjuntas solo tendrán validez las que correspondan a las coberturas contratadas.",
+      "ORDNUMJC": 0
+    },
+    {
+      "REFERSEC": 2,
+      "REFERTEX": "(2)  A  -  sin reducción de suma asegurada a los 65 años / C - con reducción al 50% de suma asegurada a los 65 años.",
+      "ORDNUMJC": 0
+    },
+    {
+      "REFERSEC": 3,
+      "REFERTEX": "(3)  En  caso de fallecimiento por accidente del Asegurado en el exterior, siempre que no se hubiera producido como  consecuencia  de algunos de los riesgos no cubiertos estipulados en el art. 5 de la Cláusula Adicional 1 de la póliza, la Compañía cubrirá los gastos de repatriación del cuerpo al país de residencia permanente y habitual, quedando excluidos los gastos de funeral de inhumación.",
+      "ORDNUMJC": 0
+    },
+    {
+      "REFERSEC": 4,
+      "REFERTEX": "(4) Las coberturas adicionales vencen a los 65 años.",
+      "ORDNUMJC": 0
+    },
+    {
+      "REFERSEC": 5,
+      "REFERTEX": "(5) El valor de las primas correspondientes a la cobertura básica de por vida desde el momento de la invalidez. Período de espera: 6 meses.",
+      "ORDNUMJC": 0
+    }
+  ],
+  "NYFM1172": [
+    {
+      "BENNOM": "LAZZARI FEDERICO",
+      "BENDOC": "DNI  24314271",
+      "BENNAC": "",
+      "BENPARE": "CONYUGE",
+      "BENORD": "01",
+      "BENPORC": "100,00",
+      "ORDNUMJC": 0
+    }
+  ],
+  "NYFM1172K": [],
+  "NYFM1173": [
+    {
+      "IMPOPRI": "17,23",
+      "GASEXPIM1": "",
+      "GASADQIM1": "",
+      "COSMENOPE": "",
+      "COSFINAN": "",
+      "IMPCUOME": "17,33",
+      "IMPODE": "",
+      "IMPODEIMP": "",
+      "IMPOIMSE": "0,10",
+      "IMPOTOT": "17,33",
+      "IMPOPRI65": "13,62",
+      "IMPOPLUS": "0,00",
+      "GASEXPIM2": "",
+      "GASADQIM2": "",
+      "IMPOIMSE2": "",
+      "IMPOPRIAH": "",
+      "IMPOAPOCI": "",
+      "IMPOAPOCE": "",
+      "GTOADMADH": "1,0",
+      "CARGOAHD": "",
+      "CARGOPVF1": "",
+      "HASTAAHD": "",
+      "TASAGAR": "",
+      "COSTOMEN": "",
+      "FONDOD2": "",
+      "FONDOD3": "",
+      "TSSNPLUS": "",
+      "ORDNUMJC": 0
+    }
+  ],
+  "NYFM1174": [],
+  "NYFM1175": [],
+  "NYFM1176": [
+    { "ANNPOLIZ": 9, "EDAD": 34, "VALRES": "776", "AHPLUSP": "13.159", "CAPASEG": "33.159", "QUITARES": "84,33", "ORDNUMJC": 0 },
+    { "ANNPOLIZ": 10, "EDAD": 35, "VALRES": "983", "AHPLUSP": "13.685", "CAPASEG": "33.685", "QUITARES": "76,67", "ORDNUMJC": 0 },
+    { "ANNPOLIZ": 15, "EDAD": 40, "VALRES": "2.117", "AHPLUSP": "16.654", "CAPASEG": "36.654", "QUITARES": "38,33", "ORDNUMJC": 0 },
+    { "ANNPOLIZ": 20, "EDAD": 45, "VALRES": "3.376", "AHPLUSP": "20.269", "CAPASEG": "40.269", "QUITARES": "0,00", "ORDNUMJC": 0 },
+    { "ANNPOLIZ": 25, "EDAD": 50, "VALRES": "4.670", "AHPLUSP": "24.667", "CAPASEG": "44.667", "QUITARES": "0,00", "ORDNUMJC": 0 },
+    { "ANNPOLIZ": 30, "EDAD": 55, "VALRES": "6.122", "AHPLUSP": "30.016", "CAPASEG": "50.016", "QUITARES": "0,00", "ORDNUMJC": 0 },
+    { "ANNPOLIZ": 35, "EDAD": 60, "VALRES": "7.760", "AHPLUSP": "36.524", "CAPASEG": "56.524", "QUITARES": "0,00", "ORDNUMJC": 0 },
+    { "ANNPOLIZ": 40, "EDAD": 65, "VALRES": "9.569", "AHPLUSP": "44.444", "CAPASEG": "64.444", "QUITARES": "0,00", "ORDNUMJC": 0 },
+    { "ANNPOLIZ": 45, "EDAD": 70, "VALRES": "11.426", "AHPLUSP": "54.087", "CAPASEG": "74.087", "QUITARES": "0,00", "ORDNUMJC": 0 },
+    { "ANNPOLIZ": 50, "EDAD": 75, "VALRES": "13.424", "AHPLUSP": "65.812", "CAPASEG": "85.812", "QUITARES": "0,00", "ORDNUMJC": 0 },
+    { "ANNPOLIZ": 55, "EDAD": 80, "VALRES": "15.511", "AHPLUSP": "80.080", "CAPASEG": "100.080", "QUITARES": "0,00", "ORDNUMJC": 0 },
+    { "ANNPOLIZ": 60, "EDAD": 85, "VALRES": "18.017", "AHPLUSP": "97.450", "CAPASEG": "117.450", "QUITARES": "0,00", "ORDNUMJC": 0 }
+  ],
+  "NYFM1177": [],
+  "NYFM1186": [
+    { "DESCRIP": "" }
+  ],
+  "NYFM1190": [
+    { "POLICUIP": "ABC" }
+  ]
+}

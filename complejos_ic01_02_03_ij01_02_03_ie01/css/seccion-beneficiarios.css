@@ -1,0 +1,37 @@
+.sec6-row {
+  grid-column: span 6;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px dotted #000;
+  padding: 2px 0;
+}
+
+.sec6-table {
+  display: grid;
+  grid-template-columns: 3fr repeat(5, 1fr);
+  font-size: 9pt;
+}
+
+.sec6-table-head,
+.sec6-table-head-complete {
+  border: 1px dotted #000;
+  background: #d1d3d4;
+  font-weight: bold;
+  text-align: left;
+  padding: 4px 0;
+}
+
+.sec6-table-data,
+.sec6-table-data-complete {
+  border-left: 1px dotted #000;
+  border-right: 1px dotted #000;
+  border-bottom: 1px dotted #000;
+  text-align: left;
+  padding: 4px 2px;
+}
+
+.sec6-table-head-complete,
+.sec6-table-data-complete {
+  grid-column: span 6;
+}

@@ -1,0 +1,74 @@
+/*
+HTML fragment:
+<div class="section section-01-datos-generales">
+  <div class="sec-num">1</div>
+  <div class="sec-content">
+    <div class="info-item fr3">...</div>
+  </div>
+</div>
+*/
+
+.section.section-01-datos-generales {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "sec-num sec-header"
+    ". sec-content";
+  grid-template-columns: 40px 1fr;
+  margin: 14px 0;
+  gap: 5px;
+  page-break-inside: avoid;
+}
+
+.section.section-01-datos-generales .sec-num {
+  grid-area: sec-num;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+.section.section-01-datos-generales .sec-content {
+  grid-area: sec-content;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  font-size: 9pt;
+}
+
+.section.section-01-datos-generales .fr1 {
+  grid-column: span 1;
+}
+
+.section.section-01-datos-generales .fr2 {
+  grid-column: span 2;
+}
+
+.section.section-01-datos-generales .fr3 {
+  grid-column: span 3;
+}
+
+.section.section-01-datos-generales .fr4 {
+  grid-column: span 4;
+}
+
+.section.section-01-datos-generales .fr6 {
+  grid-column: span 6;
+}
+
+.section.section-01-datos-generales .info-item {
+  border-bottom: 1px solid #000;
+}
+
+.section.section-01-datos-generales .info-item p:first-of-type {
+  font-weight: bold;
+  margin: 0;
+}
+
+.section.section-01-datos-generales .info-item p:nth-of-type(2) {
+  border-bottom: 4px solid #000;
+  width: max-content;
+  margin: 0;
+}

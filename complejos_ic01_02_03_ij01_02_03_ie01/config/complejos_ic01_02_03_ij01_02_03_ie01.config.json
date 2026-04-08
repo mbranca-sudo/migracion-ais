@@ -1,0 +1,2955 @@
+{
+    "dataSets": [
+        {
+            "queryText": "select *  from  NY50076.NYFTPIEF where ciaascod=? and ramopcod=? and situcfin='1'",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "ACCION",
+                    "dataType": "string"
+                },
+                {
+                    "position": "4",
+                    "name": "EFECTANN",
+                    "dataType": "string"
+                },
+                {
+                    "position": "5",
+                    "name": "EFECTMES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "6",
+                    "name": "EFECTDIA",
+                    "dataType": "string"
+                },
+                {
+                    "position": "7",
+                    "name": "SITUCFIN",
+                    "dataType": "string"
+                },
+                {
+                    "position": "8",
+                    "name": "MODELO",
+                    "dataType": "string"
+                },
+                {
+                    "position": "9",
+                    "name": "RAZONLEG",
+                    "dataType": "string"
+                },
+                {
+                    "position": "10",
+                    "name": "DIRECLEG",
+                    "dataType": "string"
+                },
+                {
+                    "position": "11",
+                    "name": "CPRLEG",
+                    "dataType": "string"
+                },
+                {
+                    "position": "12",
+                    "name": "LOCALRLEG",
+                    "dataType": "string"
+                },
+                {
+                    "position": "13",
+                    "name": "PCIARLEG",
+                    "dataType": "string"
+                },
+                {
+                    "position": "14",
+                    "name": "PAISRLEG",
+                    "dataType": "string"
+                },
+                {
+                    "position": "15",
+                    "name": "TELEFLEG",
+                    "dataType": "string"
+                },
+                {
+                    "position": "16",
+                    "name": "TELE0810",
+                    "dataType": "string"
+                },
+                {
+                    "position": "17",
+                    "name": "CONTACTO",
+                    "dataType": "string"
+                },
+                {
+                    "position": "18",
+                    "name": "LOGO",
+                    "dataType": "string"
+                },
+                {
+                    "position": "19",
+                    "name": "LOGO1",
+                    "dataType": "string"
+                },
+                {
+                    "position": "20",
+                    "name": "LOGO2",
+                    "dataType": "string"
+                },
+                {
+                    "position": "21",
+                    "name": "CONSLOGO",
+                    "dataType": "string"
+                },
+                {
+                    "position": "22",
+                    "name": "PATHBANN",
+                    "dataType": "string"
+                },
+                {
+                    "position": "23",
+                    "name": "NOMBBANN",
+                    "dataType": "string"
+                },
+                {
+                    "position": "24",
+                    "name": "ORIGCOPIA",
+                    "dataType": "string"
+                },
+                {
+                    "position": "25",
+                    "name": "NOMBFIRMA",
+                    "dataType": "string"
+                },
+                {
+                    "position": "26",
+                    "name": "CARGOFIRM",
+                    "dataType": "string"
+                },
+                {
+                    "position": "27",
+                    "name": "PAGWEBVI",
+                    "dataType": "string"
+                },
+                {
+                    "position": "28",
+                    "name": "SECCICOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "29",
+                    "name": "BANNBAN",
+                    "dataType": "string"
+                }
+            ],
+            "name": "DS1",
+            "id": "3738"
+        },
+        {
+            "queryText": "select * from NY50076.NYFM1170 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=?",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "MODELO",
+                    "dataType": "string"
+                },
+                {
+                    "position": "10",
+                    "name": "BANNBAN",
+                    "dataType": "string"
+                },
+                {
+                    "position": "11",
+                    "name": "LUGFECHA",
+                    "dataType": "string"
+                },
+                {
+                    "position": "12",
+                    "name": "POLIZA",
+                    "dataType": "string"
+                },
+                {
+                    "position": "13",
+                    "name": "ENDOSO",
+                    "dataType": "string"
+                },
+                {
+                    "position": "14",
+                    "name": "MOTEND",
+                    "dataType": "string"
+                },
+                {
+                    "position": "15",
+                    "name": "TITPLAN",
+                    "dataType": "string"
+                },
+                {
+                    "position": "16",
+                    "name": "FECVIG",
+                    "dataType": "string"
+                },
+                {
+                    "position": "17",
+                    "name": "FECEMI",
+                    "dataType": "string"
+                },
+                {
+                    "position": "18",
+                    "name": "FECVTO",
+                    "dataType": "string"
+                },
+                {
+                    "position": "19",
+                    "name": "FECEND",
+                    "dataType": "string"
+                },
+                {
+                    "position": "20",
+                    "name": "MONCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "21",
+                    "name": "MONEDA",
+                    "dataType": "string"
+                },
+                {
+                    "position": "22",
+                    "name": "PAGOFORM",
+                    "dataType": "string"
+                },
+                {
+                    "position": "23",
+                    "name": "PAGOFREC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "24",
+                    "name": "POLIMAIL",
+                    "dataType": "string"
+                },
+                {
+                    "position": "25",
+                    "name": "POLITEL",
+                    "dataType": "string"
+                },
+                {
+                    "position": "26",
+                    "name": "ASEGNOM",
+                    "dataType": "string"
+                },
+                {
+                    "position": "27",
+                    "name": "ASEGDOM",
+                    "dataType": "string"
+                },
+                {
+                    "position": "28",
+                    "name": "ASEGDNUM",
+                    "dataType": "string"
+                },
+                {
+                    "position": "29",
+                    "name": "ASEGDPIS",
+                    "dataType": "string"
+                },
+                {
+                    "position": "30",
+                    "name": "ASEGLOC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "31",
+                    "name": "ASEGPROV",
+                    "dataType": "string"
+                },
+                {
+                    "position": "32",
+                    "name": "ASEGCPOS",
+                    "dataType": "string"
+                },
+                {
+                    "position": "33",
+                    "name": "ASEGFNAC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "34",
+                    "name": "ASEGDOC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "35",
+                    "name": "ASEGSEX",
+                    "dataType": "string"
+                },
+                {
+                    "position": "36",
+                    "name": "ASEGDIES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "37",
+                    "name": "ASEGPROF",
+                    "dataType": "string"
+                },
+                {
+                    "position": "38",
+                    "name": "ASEGDEPO",
+                    "dataType": "string"
+                },
+                {
+                    "position": "39",
+                    "name": "ASEGFUMA",
+                    "dataType": "string"
+                },
+                {
+                    "position": "40",
+                    "name": "ASEGESTI",
+                    "dataType": "string"
+                },
+                {
+                    "position": "41",
+                    "name": "ASEGLALO",
+                    "dataType": "string"
+                },
+                {
+                    "position": "42",
+                    "name": "TOMANOM",
+                    "dataType": "string"
+                },
+                {
+                    "position": "43",
+                    "name": "TOMADOM",
+                    "dataType": "string"
+                },
+                {
+                    "position": "44",
+                    "name": "TOMALOC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "45",
+                    "name": "TOMAPROV",
+                    "dataType": "string"
+                },
+                {
+                    "position": "46",
+                    "name": "TOMACPOS",
+                    "dataType": "string"
+                },
+                {
+                    "position": "47",
+                    "name": "TOMADOC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "48",
+                    "name": "CONYNOM",
+                    "dataType": "string"
+                },
+                {
+                    "position": "49",
+                    "name": "CONYFNAC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "50",
+                    "name": "CONYDOC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "51",
+                    "name": "CONYSEX",
+                    "dataType": "string"
+                },
+                {
+                    "position": "52",
+                    "name": "CONYPROF",
+                    "dataType": "string"
+                },
+                {
+                    "position": "53",
+                    "name": "CONYDEPO",
+                    "dataType": "string"
+                },
+                {
+                    "position": "54",
+                    "name": "CONYFUMA",
+                    "dataType": "string"
+                },
+                {
+                    "position": "55",
+                    "name": "AGENTCLA",
+                    "dataType": "string"
+                },
+                {
+                    "position": "56",
+                    "name": "AGENTCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "57",
+                    "name": "AGENTNOM",
+                    "dataType": "string"
+                },
+                {
+                    "position": "58",
+                    "name": "AGENTMAT",
+                    "dataType": "string"
+                },
+                {
+                    "position": "59",
+                    "name": "AGENTOFI",
+                    "dataType": "string"
+                },
+                {
+                    "position": "60",
+                    "name": "CENTRNOM",
+                    "dataType": "string"
+                },
+                {
+                    "position": "61",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "62",
+                    "name": "CUENTANRO",
+                    "dataType": "string"
+                },
+                {
+                    "position": "63",
+                    "name": "TOMATEL",
+                    "dataType": "string"
+                }
+            ],
+            "name": "NYFM1170",
+            "id": "4487"
+        },
+        {
+            "queryText": "select *\t from NY50076.NYFM1171 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=? and COBERPRI = 'P'",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "OPCIOCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "10",
+                    "name": "OPCIODES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "11",
+                    "name": "COBERSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "12",
+                    "name": "COBERPRI",
+                    "dataType": "string"
+                },
+                {
+                    "position": "13",
+                    "name": "COBERCOD",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "14",
+                    "name": "COBERDES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "15",
+                    "name": "SUMASEG",
+                    "dataType": "string"
+                },
+                {
+                    "position": "16",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                }
+            ],
+            "name": "NYFM1171",
+            "id": "5258"
+        },
+        {
+            "queryText": "select * from NY50076.NYFM1171RF WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=?",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "REFERSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "10",
+                    "name": "REFERTEX",
+                    "dataType": "string"
+                },
+                {
+                    "position": "11",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                }
+            ],
+            "name": "NYFM1171RF",
+            "id": "5259"
+        },
+        {
+            "queryText": "select * from NY50076.NYFM1172 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=? AND BENDEP != 'KK'",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "SECBENE",
+                    "dataType": "string"
+                },
+                {
+                    "position": "10",
+                    "name": "COBERCOD",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "11",
+                    "name": "BENNOM",
+                    "dataType": "string"
+                },
+                {
+                    "position": "12",
+                    "name": "BENDOC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "13",
+                    "name": "BENNAC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "14",
+                    "name": "BENPARE",
+                    "dataType": "string"
+                },
+                {
+                    "position": "15",
+                    "name": "BENPORC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "16",
+                    "name": "BENORD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "17",
+                    "name": "BENDEP",
+                    "dataType": "string"
+                },
+                {
+                    "position": "18",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                }
+            ],
+            "name": "NYFM1172",
+            "id": "5260"
+        },
+        {
+            "queryText": "select * from NY50076.NYFM1172 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=? AND BENDEP = 'KK'",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "SECBENE",
+                    "dataType": "string"
+                },
+                {
+                    "position": "10",
+                    "name": "COBERCOD",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "11",
+                    "name": "BENNOM",
+                    "dataType": "string"
+                },
+                {
+                    "position": "12",
+                    "name": "BENDOC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "13",
+                    "name": "BENNAC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "14",
+                    "name": "BENPARE",
+                    "dataType": "string"
+                },
+                {
+                    "position": "15",
+                    "name": "BENPORC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "16",
+                    "name": "BENORD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "17",
+                    "name": "BENDEP",
+                    "dataType": "string"
+                },
+                {
+                    "position": "18",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                }
+            ],
+            "name": "NYFM1172K",
+            "id": "5779"
+        },
+        {
+            "queryText": "select * from NY50076.NYFM1173 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=?",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "BONIDES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "10",
+                    "name": "BONIPORC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "11",
+                    "name": "GASEXP",
+                    "dataType": "string"
+                },
+                {
+                    "position": "12",
+                    "name": "GASADQ",
+                    "dataType": "string"
+                },
+                {
+                    "position": "13",
+                    "name": "IMPOPRI",
+                    "dataType": "string"
+                },
+                {
+                    "position": "14",
+                    "name": "IMPOIMSE",
+                    "dataType": "string"
+                },
+                {
+                    "position": "15",
+                    "name": "LEYEIMPUE",
+                    "dataType": "string"
+                },
+                {
+                    "position": "16",
+                    "name": "PAGOFREC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "17",
+                    "name": "IMPODE",
+                    "dataType": "string"
+                },
+                {
+                    "position": "18",
+                    "name": "IMPODEIMP",
+                    "dataType": "string"
+                },
+                {
+                    "position": "19",
+                    "name": "IMPCUOME",
+                    "dataType": "string"
+                },
+                {
+                    "position": "20",
+                    "name": "IMPOPRI65",
+                    "dataType": "string"
+                },
+                {
+                    "position": "21",
+                    "name": "IMPOTOT",
+                    "dataType": "string"
+                },
+                {
+                    "position": "22",
+                    "name": "IMPOPRIAH",
+                    "dataType": "string"
+                },
+                {
+                    "position": "23",
+                    "name": "IMPOPRCUO",
+                    "dataType": "string"
+                },
+                {
+                    "position": "24",
+                    "name": "IMPOPLUS",
+                    "dataType": "string"
+                },
+                {
+                    "position": "25",
+                    "name": "IMPOAPOCI",
+                    "dataType": "string"
+                },
+                {
+                    "position": "26",
+                    "name": "IMPOAPOCE",
+                    "dataType": "string"
+                },
+                {
+                    "position": "27",
+                    "name": "IMPCTADO",
+                    "dataType": "string"
+                },
+                {
+                    "position": "28",
+                    "name": "IMPCTADI",
+                    "dataType": "string"
+                },
+                {
+                    "position": "29",
+                    "name": "IMPTRAPL",
+                    "dataType": "string"
+                },
+                {
+                    "position": "30",
+                    "name": "POLIZENC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "31",
+                    "name": "FECENC",
+                    "dataType": "string"
+                },
+                {
+                    "position": "32",
+                    "name": "GTOADMADH",
+                    "dataType": "string"
+                },
+                {
+                    "position": "33",
+                    "name": "HASTAAHD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "34",
+                    "name": "CARGOAHD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "35",
+                    "name": "CARGORENT",
+                    "dataType": "string"
+                },
+                {
+                    "position": "36",
+                    "name": "FONDO1",
+                    "dataType": "string"
+                },
+                {
+                    "position": "37",
+                    "name": "FONDOD1",
+                    "dataType": "string"
+                },
+                {
+                    "position": "38",
+                    "name": "FONDO2",
+                    "dataType": "string"
+                },
+                {
+                    "position": "39",
+                    "name": "FONDOD2",
+                    "dataType": "string"
+                },
+                {
+                    "position": "40",
+                    "name": "FONDO3",
+                    "dataType": "string"
+                },
+                {
+                    "position": "41",
+                    "name": "FONDOD3",
+                    "dataType": "string"
+                },
+                {
+                    "position": "42",
+                    "name": "CARGOPVF1",
+                    "dataType": "string"
+                },
+                {
+                    "position": "43",
+                    "name": "CARGOPVF2",
+                    "dataType": "string"
+                },
+                {
+                    "position": "44",
+                    "name": "CARGOPVF3",
+                    "dataType": "string"
+                },
+                {
+                    "position": "45",
+                    "name": "CARGOPFF1",
+                    "dataType": "string"
+                },
+                {
+                    "position": "46",
+                    "name": "CARGOPFF2",
+                    "dataType": "string"
+                },
+                {
+                    "position": "47",
+                    "name": "CARGOPFF3",
+                    "dataType": "string"
+                },
+                {
+                    "position": "48",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "49",
+                    "name": "COSTOMEN",
+                    "dataType": "string"
+                },
+                {
+                    "position": "50",
+                    "name": "GASEXPIM1",
+                    "dataType": "string"
+                },
+                {
+                    "position": "51",
+                    "name": "GASADQIM1",
+                    "dataType": "string"
+                },
+                {
+                    "position": "52",
+                    "name": "GASEXPIM2",
+                    "dataType": "string"
+                },
+                {
+                    "position": "53",
+                    "name": "GASADQIM2",
+                    "dataType": "string"
+                },
+                {
+                    "position": "54",
+                    "name": "TSSNINDI",
+                    "dataType": "string"
+                },
+                {
+                    "position": "55",
+                    "name": "TSSNPLUS",
+                    "dataType": "string"
+                },
+                {
+                    "position": "56",
+                    "name": "COSFINAN",
+                    "dataType": "string"
+                },
+                {
+                    "position": "57",
+                    "name": "COSMENOPE",
+                    "dataType": "string"
+                },
+                {
+                    "position": "58",
+                    "name": "IMPOIMSE2",
+                    "dataType": "string"
+                }
+            ],
+            "name": "NYFM1173",
+            "id": "5261"
+        },
+        {
+            "queryText": "select * from NY50076.NYFM1174 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=?",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "SECFOND",
+                    "dataType": "string"
+                },
+                {
+                    "position": "10",
+                    "name": "ANTIGPOL",
+                    "dataType": "string"
+                },
+                {
+                    "position": "11",
+                    "name": "FONDO1",
+                    "dataType": "string"
+                },
+                {
+                    "position": "12",
+                    "name": "GFONDO1",
+                    "dataType": "string"
+                },
+                {
+                    "position": "13",
+                    "name": "FONDO2",
+                    "dataType": "string"
+                },
+                {
+                    "position": "14",
+                    "name": "GFONDO2",
+                    "dataType": "string"
+                },
+                {
+                    "position": "15",
+                    "name": "FONDO3",
+                    "dataType": "string"
+                },
+                {
+                    "position": "16",
+                    "name": "GFONDO3",
+                    "dataType": "string"
+                },
+                {
+                    "position": "17",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                }
+            ],
+            "name": "NYFM1174",
+            "id": "5262"
+        },
+        {
+            "queryText": "select * from NY50076.NYFM1175 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=?",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "QUITASEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "10",
+                    "name": "ANNQUITA",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "11",
+                    "name": "PORCQUITA",
+                    "dataType": "string"
+                },
+                {
+                    "position": "12",
+                    "name": "LEYFINAL",
+                    "dataType": "string"
+                },
+                {
+                    "position": "13",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                }
+            ],
+            "name": "NYFM1175",
+            "id": "5263"
+        },
+        {
+            "queryText": "select * from NY50076.NYFM1176 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=?",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "VALORSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "10",
+                    "name": "ANNPOLIZ",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "11",
+                    "name": "EDAD",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "12",
+                    "name": "VALRES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "13",
+                    "name": "AHPLUSP",
+                    "dataType": "string"
+                },
+                {
+                    "position": "14",
+                    "name": "CAPASEG",
+                    "dataType": "string"
+                },
+                {
+                    "position": "15",
+                    "name": "QUITARES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "16",
+                    "name": "TASAGAR",
+                    "dataType": "string"
+                },
+                {
+                    "position": "17",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                }
+            ],
+            "name": "NYFM1176",
+            "id": "5264"
+        },
+        {
+            "queryText": "select * from NY50076.NYFM1177 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=?",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "SECUENCE",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "10",
+                    "name": "CLAUSCOD",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "11",
+                    "name": "CLAUSVER",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "12",
+                    "name": "CLAUSSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "13",
+                    "name": "CLAUSSUP",
+                    "dataType": "string"
+                },
+                {
+                    "position": "14",
+                    "name": "CLAUSDES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "15",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                }
+            ],
+            "name": "NYFM1177",
+            "id": "5265"
+        },
+        {
+            "queryText": "select *\t from NY50076.NYFM1171 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=? and COBERPRI !='P'",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "OPCIOCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "10",
+                    "name": "OPCIODES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "11",
+                    "name": "COBERSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "12",
+                    "name": "COBERPRI",
+                    "dataType": "string"
+                },
+                {
+                    "position": "13",
+                    "name": "COBERCOD",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "14",
+                    "name": "COBERDES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "15",
+                    "name": "SUMASEG",
+                    "dataType": "string"
+                },
+                {
+                    "position": "16",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                }
+            ],
+            "name": "NYFM1171B",
+            "id": "5618"
+        },
+        {
+            "queryText": "select * from NY50076.nyfm1165 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND  SUPLENUM=? AND ORDNUMJC=?",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "2",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "10",
+                    "name": "SECUENCI",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "11",
+                    "name": "CLAUSSUPL",
+                    "dataType": "string"
+                }
+            ],
+            "name": "NYFM1165",
+            "id": "3313"
+        },
+        {
+            "queryText": "select *\t from NY50076.NYFM1171 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=? AND COBERPRI = 'P'",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "OPCIOCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "10",
+                    "name": "OPCIODES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "11",
+                    "name": "COBERSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "12",
+                    "name": "COBERPRI",
+                    "dataType": "string"
+                },
+                {
+                    "position": "13",
+                    "name": "COBERCOD",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "14",
+                    "name": "COBERDES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "15",
+                    "name": "SUMASEG",
+                    "dataType": "string"
+                },
+                {
+                    "position": "16",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                }
+            ],
+            "name": "M1171",
+            "id": "5830"
+        },
+        {
+            "queryText": "select *\t from NY50076.NYFM1171 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=? AND COBERPRI != 'P'",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "OPCIOCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "10",
+                    "name": "OPCIODES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "11",
+                    "name": "COBERSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "12",
+                    "name": "COBERPRI",
+                    "dataType": "string"
+                },
+                {
+                    "position": "13",
+                    "name": "COBERCOD",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "14",
+                    "name": "COBERDES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "15",
+                    "name": "SUMASEG",
+                    "dataType": "string"
+                },
+                {
+                    "position": "16",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                }
+            ],
+            "name": "M1171B",
+            "id": "5834"
+        },
+        {
+            "queryText": "select *\t from NY50076.NYFM1162 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=?",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "2",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "10",
+                    "name": "COBERCOD",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "11",
+                    "name": "CLAUSCOD",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "12",
+                    "name": "CLAUSVER",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "13",
+                    "name": "COBERDAB",
+                    "dataType": "string"
+                },
+                {
+                    "position": "14",
+                    "name": "GRUPOCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "15",
+                    "name": "GRUPODES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "16",
+                    "name": "CLAUSDAB",
+                    "dataType": "string"
+                },
+                {
+                    "position": "17",
+                    "name": "CLAUSDES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "18",
+                    "name": "CLAUTXT",
+                    "dataType": "string"
+                },
+                {
+                    "position": "19",
+                    "name": "CLAUSSUP",
+                    "dataType": "string"
+                }
+            ],
+            "name": "M1162",
+            "id": "5831"
+        },
+        {
+            "queryText": "select *\t from NY50076.NYFM1162 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND SUPLENUM=? AND ORDNUMJC=?",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "2",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "10",
+                    "name": "COBERCOD",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "11",
+                    "name": "CLAUSCOD",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "12",
+                    "name": "CLAUSVER",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "13",
+                    "name": "COBERDAB",
+                    "dataType": "string"
+                },
+                {
+                    "position": "14",
+                    "name": "GRUPOCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "15",
+                    "name": "GRUPODES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "16",
+                    "name": "CLAUSDAB",
+                    "dataType": "string"
+                },
+                {
+                    "position": "17",
+                    "name": "CLAUSDES",
+                    "dataType": "string"
+                },
+                {
+                    "position": "18",
+                    "name": "CLAUTXT",
+                    "dataType": "string"
+                },
+                {
+                    "position": "19",
+                    "name": "CLAUSSUP",
+                    "dataType": "string"
+                }
+            ],
+            "name": "M1162B",
+            "id": "5842"
+        },
+        {
+            "queryText": "select * from NY50076.nyfm1186 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND  SUPLENUM=? AND ORDNUMJC=?",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "2",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "10",
+                    "name": "DESCRIP",
+                    "dataType": "string"
+                }
+            ],
+            "name": "NYFM1186",
+            "id": "5855"
+        },
+        {
+            "queryText": "select * from NY50076.nyfm1190 WHERE  CIAASCOD=? AND  RAMOPCOD=? AND POLIZANN=? AND POLIZSEC=? AND CERTIPOL=? AND  CERTIANN=? AND  CERTISEC=? AND  SUPLENUM=? AND ORDNUMJC=?",
+            "parameters": [
+                {
+                    "name": "param_1",
+                    "paramName": "RP_C",
+                    "position": "1"
+                },
+                {
+                    "name": "param_2",
+                    "paramName": "RP_R",
+                    "position": "2"
+                },
+                {
+                    "name": "param_3",
+                    "paramName": "RP_PA",
+                    "position": "3"
+                },
+                {
+                    "name": "param_4",
+                    "paramName": "RP_PS",
+                    "position": "4"
+                },
+                {
+                    "name": "param_5",
+                    "paramName": "RP_CP",
+                    "position": "5"
+                },
+                {
+                    "name": "param_6",
+                    "paramName": "RP_CA",
+                    "position": "6"
+                },
+                {
+                    "name": "param_7",
+                    "paramName": "RP_CS",
+                    "position": "7"
+                },
+                {
+                    "name": "param_8",
+                    "paramName": "RP_SN",
+                    "position": "8"
+                },
+                {
+                    "name": "param_9",
+                    "paramName": "RP_JO",
+                    "position": "9"
+                }
+            ],
+            "resultSet": [
+                {
+                    "position": "1",
+                    "name": "ORDNUMJC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "2",
+                    "name": "CIAASCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "3",
+                    "name": "RAMOPCOD",
+                    "dataType": "string"
+                },
+                {
+                    "position": "4",
+                    "name": "POLIZANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "5",
+                    "name": "POLIZSEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "6",
+                    "name": "CERTIPOL",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "7",
+                    "name": "CERTIANN",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "8",
+                    "name": "CERTISEC",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "9",
+                    "name": "SUPLENUM",
+                    "dataType": "decimal"
+                },
+                {
+                    "position": "10",
+                    "name": "POLICUIP",
+                    "dataType": "string"
+                }
+            ],
+            "name": "NYFM1190",
+            "id": "14709"
+        }
+    ]
+}

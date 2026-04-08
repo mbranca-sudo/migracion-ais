@@ -1,0 +1,17 @@
+/*
+HTML fragment:
+<link rel="stylesheet" href="../css/main.vida.css" />
+*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+  font-family: "Univers Condensed", "Arial Narrow", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,74 @@
+/*
+HTML fragment:
+<div class="section section-07-ahorro-plus">
+  <div class="sec-num">7</div>
+  <div class="sec-header">Ahorro Plus / Fondos de Inversión</div>
+  <div class="sec-content">
+    <div class="sec9-row">...</div>
+  </div>
+</div>
+*/
+
+.section.section-07-ahorro-plus {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "sec-num sec-header"
+    ". sec-content";
+  grid-template-columns: 40px 1fr;
+  margin: 14px 0;
+  gap: 5px;
+  page-break-inside: avoid;
+}
+
+.section.section-07-ahorro-plus .sec-num {
+  grid-area: sec-num;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+.section.section-07-ahorro-plus .sec-header {
+  grid-area: sec-header;
+  border: 1px solid #000;
+  padding-left: 10px;
+  font-size: 11pt;
+  font-weight: bold;
+  align-content: center;
+  min-height: 40px;
+}
+
+.section.section-07-ahorro-plus .sec-content {
+  grid-area: sec-content;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  font-size: 9pt;
+}
+
+.section.section-07-ahorro-plus .bold {
+  font-weight: bold;
+}
+
+.section.section-07-ahorro-plus .sec9-row {
+  grid-column: span 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+  border-bottom: 1px dotted #000;
+  padding: 2px 0;
+}
+
+.section.section-07-ahorro-plus .sec9-item-title {
+  flex: 1 1 auto;
+}
+
+.section.section-07-ahorro-plus .sec9-item-suma {
+  flex: 0 0 auto;
+  min-width: 35mm;
+  text-align: right;
+}

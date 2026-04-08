@@ -1,0 +1,54 @@
+/*
+HTML fragment:
+<div class="section section-09-medios-pago">
+  <div class="sec-num">9</div>
+  <div class="sec-header">Medios de Pago habilitados</div>
+  <div class="sec-content">
+    <div class="fr6">...</div>
+  </div>
+</div>
+*/
+
+.section.section-09-medios-pago {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "sec-num sec-header"
+    ". sec-content";
+  grid-template-columns: 40px 1fr;
+  margin: 14px 0;
+  gap: 5px;
+  page-break-inside: avoid;
+}
+
+.section.section-09-medios-pago .sec-num {
+  grid-area: sec-num;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+.section.section-09-medios-pago .sec-header {
+  grid-area: sec-header;
+  border: 1px solid #000;
+  padding-left: 10px;
+  font-size: 11pt;
+  font-weight: bold;
+  align-content: center;
+  min-height: 40px;
+}
+
+.section.section-09-medios-pago .sec-content {
+  grid-area: sec-content;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  font-size: 9pt;
+}
+
+.section.section-09-medios-pago .fr6 {
+  grid-column: span 6;
+}

@@ -1,0 +1,89 @@
+/*
+HTML fragment:
+<div class="section section-02-asegurado">
+  <div class="sec-num">2</div>
+  <div class="sec-header">Asegurado</div>
+  <div class="sec-content">
+    <div class="asegurado-item fr2">...</div>
+  </div>
+</div>
+*/
+
+.section {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "sec-num sec-header"
+    ".  sec-content";
+  grid-template-columns: 40px 6fr;
+  margin: 20px 0px;
+  gap: 5px;
+}
+
+.sec-num {
+  grid-area: sec-num;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+.sec-header {
+  grid-area: sec-header;
+  border: 1px solid #000;
+  align-content: center;
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: 11pt;
+}
+
+.sec-content {
+  grid-area: sec-content;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  font-size: 9pt;
+}
+
+.fr1 {
+  grid-column: span 1;
+}
+
+.fr2 {
+  grid-column: span 2;
+}
+
+.fr3 {
+  grid-column: span 3;
+}
+
+.fr4 {
+  grid-column: span 4;
+}
+
+.fr6 {
+  grid-column: span 6;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.asegurado-item {
+  border-bottom: 1px dotted #000;
+}
+
+.asegurado-item p:first-of-type {
+  font-weight: bold;
+}
+
+.asegurado-item p:nth-of-type(2) {
+  align-content: center;
+}
+
+.input-radio {
+  align-items: center;
+  accent-color: black;
+}
