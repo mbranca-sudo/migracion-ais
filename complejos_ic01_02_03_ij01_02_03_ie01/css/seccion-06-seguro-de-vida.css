@@ -1,0 +1,85 @@
+/*
+HTML fragment:
+<div class="section section-06-seguro-de-vida">
+  <div class="sec-num">6</div>
+  <div class="sec-header">Seguro de Vida</div>
+  <div class="sec-content">
+    <div class="sec8-table">...</div>
+    <div class="sec8-table-text">...</div>
+  </div>
+</div>
+*/
+
+.section.section-06-seguro-de-vida {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "sec-num sec-header"
+    ". sec-content";
+  grid-template-columns: 40px 1fr;
+  margin: 12px 0;
+  gap: 4px;
+  page-break-inside: auto;
+  break-inside: auto;
+}
+
+.section.section-06-seguro-de-vida .sec-num {
+  grid-area: sec-num;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+.section.section-06-seguro-de-vida .sec-header {
+  grid-area: sec-header;
+  border: 1px solid #000;
+  padding-left: 8px;
+  font-size: 11pt;
+  font-weight: bold;
+  align-content: center;
+  min-height: 40px;
+}
+
+.section.section-06-seguro-de-vida .sec-content {
+  grid-area: sec-content;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  font-size: 9pt;
+}
+
+.section.section-06-seguro-de-vida .fr6 {
+  grid-column: span 6;
+}
+
+.section.section-06-seguro-de-vida .bold {
+  font-weight: bold;
+}
+
+.section.section-06-seguro-de-vida .sec8-table {
+  grid-column: span 6;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  column-gap: 8mm;
+}
+
+.section.section-06-seguro-de-vida .sec8-table > div {
+  border-bottom: 1px dotted #000;
+  padding: 2px 0;
+  min-width: 0;
+}
+
+.section.section-06-seguro-de-vida .sec8-table > div:nth-child(2n) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.section.section-06-seguro-de-vida .sec8-table-text {
+  grid-column: span 6;
+  padding: 6px 0;
+  font-size: 8.5pt;
+  border-bottom: 2px solid #000;
+}

@@ -1,0 +1,48 @@
+/*
+HTML fragment:
+<div class="signature-block">
+  <div class="signature-image"></div>
+  <div class="signature-name">...</div>
+  <div class="signature-role">...</div>
+  <div class="signature-note">...</div>
+</div>
+*/
+
+.signature-block {
+  margin-top: 18mm;
+  text-align: left;
+  font-size: 9pt;
+}
+
+.signature-image {
+  margin-left: auto;
+  
+  width: 55mm;
+  height: 20mm;
+}
+
+.firma{
+ width: 100px; 
+  height: auto;
+}
+
+.signature-name {
+  margin-top: 4mm;
+  margin-right: 30mm;
+  font-weight: bold;
+  text-align: right;
+}
+
+.signature-role {
+  margin-top: 1mm;
+  margin-right: 32.5mm;
+  text-align: right;
+}
+
+.signature-note {
+
+  margin-top: 8mm;
+  font-size: 7pt;
+  text-align: right;
+  line-height: 1.15;
+}

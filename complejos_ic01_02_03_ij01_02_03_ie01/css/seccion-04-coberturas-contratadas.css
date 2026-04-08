@@ -1,0 +1,130 @@
+/*
+HTML fragment:
+<div class="section section-04-coberturas-contratadas">
+  <div class="sec-num">4</div>
+  <div class="sec-header">Coberturas Contratadas</div>
+  <div class="sec-content">
+    <div class="header fr6">...</div>
+    <div class="sec6-row">...</div>
+    <div class="text fr6">...</div>
+  </div>
+</div>
+<div class="sec6-table">
+  <div class="sec6-table-head">Nombre y Apellido</div>
+  <div class="sec6-table-head">Tipo y Nro. de Doc.</div>
+  <div class="sec6-table-head">Fecha Nac.</div>
+  <div class="sec6-table-head">Parentesco</div>
+  <div class="sec6-table-head">Orden</div>
+  <div class="sec6-table-head">Porcentaje</div>
+  <div class="sec6-table-data">...</div>
+</div>
+*/
+
+.section.section-04-coberturas-contratadas {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "sec-num sec-header"
+    ". sec-content";
+  grid-template-columns: 40px 1fr;
+  margin: 14px 0;
+  gap: 5px;
+  page-break-inside: avoid;
+}
+
+.section.section-04-coberturas-contratadas .sec-num {
+  grid-area: sec-num;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+.section.section-04-coberturas-contratadas .sec-header {
+  grid-area: sec-header;
+  border: 1px solid #000;
+  padding-left: 10px;
+  font-size: 11pt;
+  font-weight: bold;
+  align-content: center;
+  min-height: 40px;
+}
+
+.section.section-04-coberturas-contratadas .sec-content {
+  grid-area: sec-content;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  font-size: 9pt;
+}
+
+.section.section-04-coberturas-contratadas .fr6 {
+  grid-column: span 6;
+}
+
+.section.section-04-coberturas-contratadas .bold {
+  font-weight: bold;
+}
+
+.section.section-04-coberturas-contratadas .header {
+  grid-column: span 6;
+  border: 1px solid #000;
+  padding: 4px 6px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 5px 0;
+  background: #d1d3d4;
+}
+
+.section.section-04-coberturas-contratadas .text {
+  grid-column: span 6;
+  font-size: 9pt;
+  padding: 8px 0;
+  line-height: 1.15;
+}
+
+.section.section-04-coberturas-contratadas .text p {
+  margin: 0 0 4px;
+}
+
+.section.section-04-coberturas-contratadas .sec6-table {
+  grid-column: span 6;
+  display: grid;
+  grid-template-columns: 3fr repeat(5, 1fr);
+}
+
+.section.section-04-coberturas-contratadas .sec6-row {
+  grid-column: span 6;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px dotted #000;
+  padding: 2px 0;
+}
+
+.section.section-04-coberturas-contratadas .sec6-table-head,
+.section.section-04-coberturas-contratadas .sec6-table-head-complete {
+  border: 1px dotted #000;
+  background: #d1d3d4;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.section.section-04-coberturas-contratadas .sec6-table-data,
+.section.section-04-coberturas-contratadas .sec6-table-data-complete {
+  border-left: 1px dotted #000;
+  border-right: 1px dotted #000;
+  border-bottom: 1px dotted #000;
+  text-align: center;
+  padding: 4px 2px;
+}
+
+.section.section-04-coberturas-contratadas .sec6-table-head-complete,
+.section.section-04-coberturas-contratadas .sec6-table-data-complete {
+  grid-column: span 6;
+}

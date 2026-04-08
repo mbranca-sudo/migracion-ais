@@ -1,0 +1,412 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #000;
+  font-family: "Univers Condensed", "Arial Narrow", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.sheet-dynamic {
+  width: 200.7mm;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.page {
+  min-height: 280mm;
+  padding: 5mm 4.65mm 0;
+  page-break-after: always;
+}
+
+.page:last-child {
+  page-break-after: auto;
+}
+
+section .report-header {
+  display: grid;
+  grid-template-columns: 14mm 1fr auto;
+  gap: 6px;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2mm;
+  margin-bottom: 2mm;
+}
+
+.report-logo {
+  width: 14mm;
+  height: auto;
+}
+
+.report-title {
+  font-size: 12pt;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.report-subtitle {
+  font-size: 8pt;
+  line-height: 1.1;
+}
+
+.report-page {
+  font-size: 9pt;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.report-policy,
+.report-contact {
+  font-size: 8.5pt;
+  line-height: 1.15;
+}
+
+.report-policy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 3mm;
+  margin-bottom: 1mm;
+}
+
+.report-policy span {
+  font-weight: bold;
+}
+
+.report-contact {
+  margin-bottom: 2mm;
+}
+
+.clausulas-adicionales {
+  border: 1px dotted #000;
+  font-size: 9pt;
+  margin-bottom: 12px;
+}
+
+.clausulas-adicionales div:first-child {
+  border-bottom: 1px dotted #000;
+  width: 100%;
+  background: #d1d3d4;
+  padding: 5px;
+}
+
+.clausulas-adicionales div:last-child {
+  padding: 4px 5px 2px;
+}
+
+.clausulas-adicionales p {
+  margin: 0 0 2px;
+}
+
+.section {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "sec-num sec-header"
+    ". sec-content";
+  grid-template-columns: 40px 1fr;
+  margin: 14px 0;
+  gap: 5px;
+  page-break-inside: avoid;
+}
+
+.sec-num {
+  grid-area: sec-num;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  text-align: center;
+  align-content: center;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+.sec-header {
+  grid-area: sec-header;
+  border: 1px solid #000;
+  padding-left: 10px;
+  font-size: 11pt;
+  font-weight: bold;
+  align-content: center;
+  min-height: 40px;
+}
+
+.sec-content {
+  grid-area: sec-content;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  font-size: 9pt;
+}
+
+.fr1 {
+  grid-column: span 1;
+}
+
+.fr2 {
+  grid-column: span 2;
+}
+
+.fr3 {
+  grid-column: span 3;
+}
+
+.fr4 {
+  grid-column: span 4;
+}
+
+.fr6 {
+  grid-column: span 6;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.info-item,
+.asegurado-item,
+.asesor-item,
+.item {
+  padding: 8px 0;
+}
+
+.info-item {
+  border-bottom: 1px solid #000;
+}
+
+.info-item p:first-of-type,
+.asegurado-item p:first-of-type,
+.asesor-item p:first-of-type,
+.item p:first-of-type {
+  font-weight: bold;
+  margin: 0;
+}
+
+.info-item p:nth-of-type(2) {
+  border-bottom: 4px solid #000;
+  width: max-content;
+  margin: 0;
+}
+
+.asegurado-item,
+.asesor-item,
+.item {
+  border-bottom: 1px dotted #000;
+}
+
+.asegurado-item p,
+.asesor-item p,
+.item p {
+  margin: 0;
+}
+
+.header {
+  grid-column: span 6;
+  border: 1px solid #000;
+  padding: 4px 6px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 5px 0;
+  background: #d1d3d4;
+}
+
+.text {
+  grid-column: span 6;
+  font-size: 9pt;
+  padding: 8px 0;
+  line-height: 1.15;
+}
+
+.text p {
+  margin: 0 0 4px;
+}
+
+.sec6-row {
+  grid-column: span 6;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px dotted #000;
+  padding: 2px 0;
+}
+
+.sec6-table {
+  grid-column: span 6;
+  display: grid;
+  grid-template-columns: 3fr repeat(5, 1fr);
+}
+
+.sec6-table-head,
+.sec6-table-head-complete {
+  border: 1px dotted #000;
+  background: #d1d3d4;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.sec6-table-data,
+.sec6-table-data-complete {
+  border-left: 1px dotted #000;
+  border-right: 1px dotted #000;
+  border-bottom: 1px dotted #000;
+  text-align: center;
+  padding: 4px 2px;
+}
+
+.sec6-table-head-complete,
+.sec6-table-data-complete {
+  grid-column: span 6;
+}
+
+.sec8-table {
+  grid-column: span 6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sec8-table > div {
+  border-bottom: 1px dotted #000;
+  padding: 2px 0;
+}
+
+.sec8-table-text {
+  grid-column: span 6;
+  padding: 6px 0;
+  font-size: 8.5pt;
+}
+
+.sec9-row {
+  grid-column: span 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+  border-bottom: 1px dotted #000;
+  padding: 2px 0;
+}
+
+.sec9-item-title {
+  flex: 1 1 auto;
+}
+
+.sec9-item-suma {
+  flex: 0 0 auto;
+  min-width: 35mm;
+  text-align: right;
+}
+
+.sec10-table {
+  grid-column: span 6;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  margin-bottom: 8px;
+}
+
+.sec10-header {
+  grid-column: span 2;
+  background: #d1d3d4;
+  text-align: center;
+  border: 1px solid #000;
+  padding: 4px 5px;
+}
+
+.sec10-table-head,
+.sec10-table-data {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 4px 5px;
+}
+
+.sec10-table-head {
+  grid-column: span 1;
+  font-weight: bold;
+}
+
+.sec10-table-data {
+  grid-column: span 1;
+  text-align: center;
+}
+
+.sec13-text {
+  grid-column: span 6;
+  padding: 5px 0;
+  font-size: 9pt;
+}
+
+.sec13-table {
+  grid-column: span 6;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.sec13-table-header {
+  grid-column: span 6;
+  background: #d1d3d4;
+  text-align: center;
+  border: 1px dotted #000;
+  padding: 5px;
+}
+
+.sec13-table-head,
+.sec13-table-data {
+  border-left: 1px dotted #000;
+  border-right: 1px dotted #000;
+  border-bottom: 1px dotted #000;
+  text-align: center;
+  padding: 4px 2px;
+}
+
+.sec13-table-head {
+  grid-column: span 1;
+  font-weight: bold;
+  background: #d1d3d4;
+}
+
+.sec13-table-data {
+  grid-column: span 1;
+}
+
+.signature-block {
+  margin-top: 18mm;
+  text-align: right;
+  font-size: 9pt;
+}
+
+.signature-image {
+  margin-left: auto;
+  width: 55mm;
+  height: 20mm;
+  border-bottom: 1px solid #000;
+}
+
+.signature-name {
+  margin-top: 4mm;
+  font-weight: bold;
+}
+
+.signature-role {
+  margin-top: 1mm;
+}
+
+.signature-note {
+  margin-top: 8mm;
+  font-size: 7pt;
+  text-align: left;
+  line-height: 1.15;
+}
+
+@media print {
+  .page {
+    page-break-after: always;
+  }
+
+  .page:last-child {
+    page-break-after: auto;
+  }
+}

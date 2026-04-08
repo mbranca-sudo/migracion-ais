@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Barlow";
+  src: url("../assets/fonts/Barlow/Barlow-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../assets/fonts/Barlow/Barlow-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../assets/fonts/Barlow/Barlow-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+  font-family: "Barlow", Arial, sans-serif;
+}
+
+body {
+  font-weight: 400;
+}
+
+.sheet-dynamic {
+  width: 200.7mm;
+  margin: 0 auto;
+  border: 1px solid #000;
+  padding: 5mm 4.65mm 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: contents;
+}
+
+.section[class*="section-"] {
+  margin: 12px 0 !important;
+  gap: 4px !important;
+  page-break-inside: auto !important;
+  break-inside: auto !important;
+}
+
+.section[class*="section-"] .sec-header {
+  padding-left: 8px !important;
+}
+
+.report-policy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 3mm;
+  margin-bottom: 1mm;
+}
+
+.report-policy span {
+  font-weight: bold;
+}
+
+.report-contact {
+  margin-bottom: 2mm;
+}
+
+@media print {
+  .page {
+    page-break-after: auto;
+  }
+}

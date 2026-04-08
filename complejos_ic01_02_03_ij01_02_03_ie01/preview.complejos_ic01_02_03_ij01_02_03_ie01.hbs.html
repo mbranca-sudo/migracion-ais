@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Póliza de Vida Individual</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../css/main.vida.css" />
+  <link rel="stylesheet" href="./css/pagina-base.css" />
+  <link rel="stylesheet" href="./css/encabezado-poliza.css" />
+  <link rel="stylesheet" href="./css/pie-poliza.css" />
+  <link rel="stylesheet" href="./css/clausulas-adicionales.css" />
+  <link rel="stylesheet" href="./css/seccion-01-datos-generales.css" />
+  <link rel="stylesheet" href="./css/seccion-02-asegurado.css" />
+  <link rel="stylesheet" href="./css/seccion-beneficiarios.css" />
+  <link rel="stylesheet" href="./css/seccion-03-asesor.css" />
+  <link rel="stylesheet" href="./css/seccion-04-coberturas-contratadas.css" />
+  <link rel="stylesheet" href="./css/seccion-04-beneficiarios-observaciones.css" />
+  <link rel="stylesheet" href="./css/bloque_servicio_atencion.css" />
+  <link rel="stylesheet" href="./css/seccion-05-detalle-primas.css" />
+  <link rel="stylesheet" href="./css/seccion-06-seguro-de-vida.css" />
+  <link rel="stylesheet" href="./css/seccion-07-ahorro-plus.css" />
+  <link rel="stylesheet" href="./css/seccion-08-cargo-cobranza-valores-garantizados.css" />
+  <link rel="stylesheet" href="./css/seccion-09-medios-pago.css" />
+  <link rel="stylesheet" href="./css/bloque-firma.css" />
+</head>
+
+<body><style> .template_var {color: BlueViolet} </style>
+  <div class="sheet-dynamic">
+      <header class="report-header">
+      <div class="header-top">
+        <div class="header-copy">
+          <div class="header-title">Póliza de Vida Individual</div>
+          <div class="header-page-line">
+            <span>Página</span>
+          </div>
+        </div>
+        <div class="header-logo-wrap">
+          <img src="./assets/images/logos/logo_galicia.png" alt="Galicia" class="header-logo" />
+        </div>
+      </div>
+      <div class="header-band">
+        <div class="header-band-item">
+          <span class="header-band-label">Póliza Nº:</span>
+          <span class="header-band-value" class="gray"><span class="template_var">{{NYFM1170.[0].RAMOPCOD}}</span><span class="template_var">{{NYFM1170.[0].POLIZANN}}</span><span class="template_var">{{NYFM1170.[0].POLIZSEC}}</span></span>
+        </div>
+        <div class="header-band-item">
+          <span class="header-band-label">Certificado Nº:</span>
+          <span class="header-band-value"><span class="template_var">{{NYFM1170.[0].CERTIPOL}}</span><span class="template_var">{{NYFM1170.[0].CERTIANN}}</span><span class="template_var">{{NYFM1170.[0].CERTISEC}}</span></span>
+        </div>
+        <div class="header-band-item">
+          <span class="header-band-label">Endoso Nº:</span>
+          <span class="header-band-value"><span class="template_var">{{NYFM1170.[0].SUPLENUM}}</span></span>
+        </div>
+        <div class="header-band-item header-band-item-end">
+          <span class="header-band-label">Original</span>
+        </div>
+      </div>
+    </header>
+      <div class="section section-01-datos-generales">
+        <div class="sec-num"> 1</div>
+        <div class="sec-content">
+          <div class="info-item fr3">
+            <p>Endoso:</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].MOTEND}}</span></p>
+          </div>
+          <div class="info-item fr3">
+            <p>Plan Contratado:</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].TITPLAN}}</span></p>
+          </div>
+          <div class="info-item fr3">
+            <p>Inicio de vigencia:</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].FECVIG}}</span></p>
+          </div>
+          <div class="info-item fr3">
+            <p>Vencimiento de la póliza:</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].FECVTO}}</span></p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="section section-03-asesor">
+        <div class="sec-num"> 2</div>
+        <div class="sec-header">Asesor</div>
+        <div class="sec-content">
+          <div class="asesor-item fr3">
+            <p class="bold">Código y número:</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].AGENTCLA}}</span> <span class="template_var">{{NYFM1170.[0].AGENTCOD}}</span></p>
+          </div>
+          <div class="asesor-item fr3">
+            <p class="bold">Nº Matrí­cula:</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].AGENTMAT}}</span></p>
+          </div>
+          <div class="asesor-item fr3">
+            <p class="bold">Apellido y nombre:</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].AGENTNOM}}</span></p>
+          </div>
+          <div class="asesor-item fr3">
+            <p class="bold">Oficina:</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].AGENTOFI}}</span> <span class="template_var">{{NYFM1170.[0].CENTRNOM}}</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!--seccion 3: Asegurado -->
+    <div class="section">
+      <span class="template_var">{{#if (eq NYFM1170.[0].TOMANOM "" ) }}</span>
+      <div class="sec-num"> 3/4 </div>
+      <span class="template_var">{{/if }}</span>
+
+      <div class="sec-header">
+
+        <span class="template_var">{{#if (ne NYFM1170.[0].TOMANOM "") }}</span>
+        Tomador / Asegurado
+        <span class="template_var">{{else}}</span>
+        Asegurado
+        <span class="template_var">{{/if}}</span>
+
+      </div>
+      <div class="sec-content">
+
+        <!-- Fila 1: nombre y apellido, tipo y nro de doc y fecha de nacimiento -->
+        <div class="asegurado-item fr2">
+          <p> Nombre y Apellido:</p>
+          <p class="gray"> <span class="template_var">{{NYFM1170.[0].ASEGNOM}}</span></p>
+        </div>
+
+        <div class="asegurado-item fr2">
+          <p> Tipo y N° de documento:</p>
+          <p class="gray"> <span class="template_var">{{NYFM1170.[0].ASEGDOC}}</span></p>
+        </div>
+
+        <div class="asegurado-item fr2">
+          <p> Fecha de Nacimiento:</p>
+          <p class="gray"> <span class="template_var">{{NYFM1170.[0].ASEGFNAC}}</span></p>
+        </div>
+
+
+        <!-- Fila 2: domicilio, numero, piso/depto -->
+        <div class="asegurado-item fr2">
+          <p> Domicilio:</p>
+          <p class="gray"> <span class="template_var">{{NYFM1170.[0].ASEGDOM}}</span></p>
+        </div>
+        <div class="asegurado-item fr2">
+          <p> Número:</p>
+          <p class="gray"> <span class="template_var">{{NYFM1170.[0].ASEGDNUM}}</span></p>
+        </div>
+
+        <div class="asegurado-item fr2">
+          <p> Piso/Dpto.:</p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].ASEGDPIS}}</span> </p>
+        </div>
+
+        <!-- fila 3: -->
+
+        <div class="asegurado-item fr2">
+          <p> Código Postal:</p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].ASEGCPOS}}</span> </p>
+        </div>
+
+        <div class="asegurado-item fr2">
+          <p> Localidad:</p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].ASEGLOC}}</span> </p>
+        </div>
+
+        <div class="asegurado-item fr2">
+          <p> Provincia:</p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].ASEGPROV}}</span> </p>
+        </div>
+
+
+        <!-- Fila 4:  -->
+
+
+        <div class="asegurado-item fr2">
+          <p> Teléfono:</p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].POLITEL}}</span> </p>
+        </div>
+
+        <div class="asegurado-item fr4">
+          <p> Email:</p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].POLIMAIL}}</span> </p>
+        </div>
+
+        <!-- Fila 5: -->
+
+        <div class="asegurado-item fr2">
+          <p> Profesión:</p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].ASEGPROF}}</span> </p>
+        </div>
+
+        <div class="asegurado-item fr4">
+          <p> Deporte:</p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].ASEGDEPO}}</span>
+
+
+
+          </p>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="asegurado-item fr1  input-radio">
+          <p>
+
+            ZURDO
+            <span class="template_var">{{#if (eq NYFM1170.[0].ASEGDIES "Z" ) }}</span>
+            <input type="radio" checked />
+            <span class="template_var">{{else}}</span>
+            <input type="radio" />
+            <span class="template_var">{{/if}}</span>
+
+          </p>
+          <p> </p>
+        </div>
+        <div class="asegurado-item fr1 input-radio">
+          <p> DIESTRO:
+            <span class="template_var">{{#if (eq NYFM1170.[0].ASEGDIES "D" )}}</span>
+            <input type="radio" checked />
+            <span class="template_var">{{else}}</span>
+            <input type="radio" />
+            <span class="template_var">{{/if}}</span>
+          </p>
+          <p> </p>
+        </div>
+        <div class="asegurado-item fr1">
+          <p> <span class="template_var">{{NYFM1170.[0].ASEGFUMA}}</span></p>
+          <p> </p>
+        </div>
+      </div>
+
+    </div>
+    
+            <div class="section section-04-coberturas-contratadas">
+        <div class="sec-num"> 5/6</div>
+        <div class="sec-header">Coberturas Contratadas(1)</div>
+        <div class="sec-content">
+          <div class="text fr6">
+            <p>Tipo de opción (2)</p>
+            <p class="gray"><span class="template_var">{{NYFM1171.[0].OPCIOCOD}}</span> <span class="template_var">{{NYFM1171.[0].OPCIODES}}</span></p>
+          </div>
+          <div class="header fr6">
+            <div>Cobertura Principal - Condiciones Generales</div>
+            <div>Suma asegurada</div>
+          </div>
+          <span class="template_var">{{#each M1171}}</span>
+          <div class="sec6-row">
+            <div class="gray"><span class="template_var">{{COBERDES}}</span><span class="template_var">{{#if @root.M1162.[@index].CLAUSDES}}</span> <span class="template_var">{{@root.M1162.[@index].CLAUSDES}}</span><span class="template_var">{{/if}}</span></div>
+            <div class="gray"><span class="template_var">{{SUMASEG}}</span></div>
+          </div>
+          <span class="template_var">{{/each}}</span>
+          <div class="header fr6">Coberturas Adicionales</div>
+          <span class="template_var">{{#each M1171B}}</span>
+          <div class="sec6-row">
+            <div class="gray"><span class="template_var">{{COBERDES}}</span><span class="template_var">{{#if @root.M1162B.[@index].CLAUSDES}}</span> <span class="template_var">{{@root.M1162B.[@index].CLAUSDES}}</span><span class="template_var">{{/if}}</span></div>
+            <div class="gray"><span class="template_var">{{SUMASEG}}</span></div>
+          </div>
+          <span class="template_var">{{/each}}</span>
+        </div>
+      </div>
+
+      <div class="text">
+        <div>
+          FORMAN PARTE INTEGRANTE DE ESTA PÓLIZA LAS CONDICIONES GENERALES, PARTICULARES, LAS CLÁUSULAS ADICIONALES
+          QUE SE DETALLAN A CONTINUACIÓN, Y SUS ANEXOS I DE EXCLUSIONES DE COBERTURAS RESPECTIVAS : <span class="template_var">{{#each NYFM1165}}</span>
+          <span class="template_var">{{CLAUSSUPL}}</span>
+          <span class="template_var">{{/each}}</span>
+        </div>
+        <div>
+        <span class="template_var">{{#each NYFM1171RF}}</span>
+        <p><span class="template_var">{{REFERTEX}}</span></p>
+        <span class="template_var">{{/each}}</span>
+        </div>
+      </div>
+
+      
+        <div class="sec-num">6/7 </div>
+        <div class="sec-header">Beneficiarios</div>
+        <div class="sec6-table">
+          <div class="sec6-table-head">Nombre y Apellido</div>
+          <div class="sec6-table-head">Tipo y Nro. de Doc.</div>
+          <div class="sec6-table-head">Fecha Nac.</div>
+          <div class="sec6-table-head">Parentesco</div>
+          <div class="sec6-table-head">Orden</div>
+          <div class="sec6-table-head">Porcentaje</div>
+          <span class="template_var">{{#each NYFM1172}}</span>
+          <div class="sec6-table-data"><span class="template_var">{{BENNOM}}</span></div>
+          <div class="sec6-table-data"><span class="template_var">{{BENDOC}}</span></div>
+          <div class="sec6-table-data"><span class="template_var">{{BENNAC}}</span></div>
+          <div class="sec6-table-data"><span class="template_var">{{BENPARE}}</span></div>
+          <div class="sec6-table-data"><span class="template_var">{{BENORD}}</span></div>
+          <div class="sec6-table-data"><span class="template_var">{{BENPORC}}</span></div>
+          <span class="template_var">{{/each}}</span>
+        </div>
+
+      <div class="text">
+        <div>OBSERVACIONES:</div>
+        <p>EL ASEGURADO O TOMADOR PUEDE SOLICITAR EN CUALQUIER MOMENTO A LA ASEGURADORA UN EJEMPLAR EN ORIGINAL DE LA PRESENTE DOCUMENTACIÓN.</p>
+        <p>ESTA PÓLIZA HA SIDO APROBADA POR LA SUPERINTENDENCIA DE SEGUROS DE LA NACIÓN POR PROVEíDO N° 106.487</p>
+        <p><strong>CUANDO EL TEXTO DE LA PÓLIZA DIFIERA DEL CONTENIDO DE LA PROPUESTA, LA DIFERENCIA SE CONSIDERARÁ APROBADA POR EL ASEGURADO SI NO RECLAMA DENTRO DE UN MES DE HABER RECIBIDO LA PÓLIZA (Artí­culo 12 de la Ley de Seguros).</strong></p>
+      </div>
+    
+
+      <div class="header">
+      Servicio de Atención al Asegurado
+    </div>
+    <div class="text">
+      <p> La entidad aseguradora dispone de un <b>Servicio de Atención al Asegurado.</b></p>
+      <p>
+        Por reclamos, que no hayan sido solucionados previamente por las ví­as de atención al público de la entidad,
+        podrán comunicarse con este Servicio al teléfono <b>4320-2800 internos 24835/29278</b>. Los datos de los
+        Responsables del Servicio de Atención al Asegurado se encuentran disponibles en la página web
+        <b> <a href="www.galiciaseguros.com.ar"> www.galiciaseguros.com.ar.</a> </b>
+      </p>
+      <p>
+        En caso de reclamo ante la entidad aseguradora no resuelto o desestimado, podrá denunciarlo a través de
+        argentina.gob.ar/ssn
+      </p>
+      <p class="bold">
+        Para consultas o reclamos, comunicarse con GGAL Seguros S.A. al 0800 555 9998.
+      </p>
+    </div>
+
+      <div class="section section-05-detalle-primas">
+        <div class="sec-num"> 7/8</div>
+        <div class="sec-header">Detalle de Primas</div>
+        <div class="sec-content">
+          <div class="item fr3">
+            <p class="bold">Moneda del Contrato:</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].MONEDA}}</span></p>
+          </div>
+          <div class="item fr3">
+            <p class="bold">Frecuencia de pago:</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].PAGOFREC}}</span></p>
+          </div>
+          <div class="item fr3">
+            <p class="bold">Forma de Pago:</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].PAGOFORM}}</span></p>
+          </div>
+          <div class="item fr3">
+            <p class="bold">Nº de cuenta:</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].CUENTANRO}}</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-06-seguro-de-vida">
+        <div class="sec-num">8/9</div>
+        <div class="sec-header">Seguro de Vida</div>
+        <div class="sec-content">
+          <div class="sec8-table">
+            <div class="bold">Prima Regular Neta</div>
+            <div class="bold"><span class="template_var">{{NYFM1173.[0].IMPOPRI}}</span></div>
+            <div>Gastos de Explotación(*)</div>
+            <div><span class="template_var">{{NYFM1173.[0].GASEXPIM1}}</span></div>
+            <div>Gastos de Adquisición(*)</div>
+            <div><span class="template_var">{{NYFM1173.[0].GASADQIM1}}</span></div>
+            <div>Costo Mensual Operativo</div>
+            <div><span class="template_var">{{NYFM1173.[0].COSMENOPE}}</span></div>
+            <div>Costo de Financiamiento</div>
+            <div><span class="template_var">{{NYFM1173.[0].COSFINAN}}</span></div>
+            <div class="bold">Prima de Tarifa</div>
+            <div class="bold"><span class="template_var">{{NYFM1173.[0].IMPCUOME}}</span></div>
+            <div>Impuestos y Sellados</div>
+            <div class="gray"><span class="template_var">{{NYFM1173.[0].IMPOIMSE}}</span></div>
+            <div class="bold">Premio periódico total hasta los 65 años</div>
+            <div class="bold"><span class="template_var">{{NYFM1173.[0].IMPOTOT}}</span></div>
+            <div class="bold">Premio periódico total a partir de los 65 años</div>
+            <div class="bold"><span class="template_var">{{NYFM1173.[0].IMPOPRI65}}</span></div>
+          </div>
+          <div class="sec8-table-text">(*) Los valores corrresponden al primer año</div>
+        </div>
+      </div>
+    
+      <div class="section section-07-ahorro-plus">
+        <div class="sec-num"> 9/10</div>
+        <div class="sec-header">Ahorro Plus / Fondos de Inversión</div>
+        <div class="sec-content">
+          <div class="sec9-row bold">
+            <div class="sec9-item-title">Prima de Ahorro Plus</div>
+            <div class="sec9-item-suma" class="gray"><span class="template_var">{{NYFM1173.[0].IMPOPLUS}}</span></div>
+          </div>
+          <div class="sec9-row">
+            <div class="sec9-item-title">Gastos de Explotación(*)</div>
+            <div class="sec9-item-suma"><span class="template_var">{{NYFM1173.[0].GASEXPIM2}}</span></div>
+          </div>
+          <div class="sec9-row">
+            <div class="sec9-item-title">Gastos de Adquisición(*)</div>
+            <div class="sec9-item-suma"><span class="template_var">{{NYFM1173.[0].GASADQIM2}}</span></div>
+          </div>
+          <div class="sec9-row">
+            <div class="sec9-item-title">Impuestos y Sellados</div>
+            <div class="sec9-item-suma"><span class="template_var">{{NYFM1173.[0].IMPOIMSE2}}</span></div>
+          </div>
+          <div class="sec9-row">
+            <div class="sec9-item-title">Premio de ahorro plus periodico</div>
+            <div class="sec9-item-suma"><span class="template_var">{{NYFM1173.[0].IMPOPRIAH}}</span></div>
+          </div>
+          <div class="sec9-row">
+            <div class="sec9-item-title bold">
+              <div> Aporte Inicial</div>
+              <div> Cuenta individual: <span class="template_var">{{NYFM1173.[0].IMPOAPOCI}}</span></div>
+            </div>
+            <div class="sec9-item-suma"><span class="bold">Cuenta especial: </span><span class="template_var">{{NYFM1173.[0].IMPOAPOCE}}</span></div>
+          </div>
+          <div class="sec9-row bold">
+            <div class="sec9-item-title">Valor Total del Seguro(**)</div>
+            <div class="sec9-item-suma"><span class="template_var">{{NYFM1173.[0].IMPOTOT}}</span></div>
+          </div>
+          <div class="sec9-row">(*) Los valores corrresponden al primer año</div>
+          <div class="sec9-row">(**) El valor total del seguro se compone de la suma entre el premio periódico total y
+            el premio de ahorro periódico</div>
+            <div>Cargo de cobranza:</div>
+            <div class="sec9-row"><span class="template_var">{{NYFM1173.[0].GTOADMADH}}</span></div>
+            <div class="sec9-row">Cargo de administración mensual:</div>
+            <div class="sec9-row"><span class="template_var">{{NYFM1173.[0].CARGOAHD}}</span></div>
+        </div>
+      </div>
+
+      <div class="section section-08-cargo-cobranza-valores-garantizados">
+        <div class="sec-num">10/11</div>
+        <div class="sec-header">Tabla Personal de valores garantizados</div>
+        <div class="sec-content">
+
+          <div class="sec13-text">
+            Esta tabla esta construida sobre la base de los valores de su Cuenta Garantizada y por lo tanto podrá
+            incrementarse cuando la Compañí­a obtenga rendimientos superiores a los garantizados o con los aportes que
+            usted realiza en su Cuenta Plus.
+          </div>
+          <div class="sec13-table">
+            <div class="sec13-table-header">Valor tasa garantizada: <span class="template_var">{{NYFM1173.[0].TASAGAR}}</span> % Anual</div>
+            <div class="sec13-table-head">Año</div>
+            <div class="sec13-table-head">Edad</div>
+            <div class="sec13-table-head">Valor Rescate (*)</div>
+            <div class="sec13-table-head">Ahorro Plus<br />Proyectado</div>
+            <div class="sec13-table-head">Capital<br />Asegurado</div>
+            <div class="sec13-table-head">Quita por<br />Rescate (**)</div>
+            <span class="template_var">{{#each NYFM1176}}</span>
+            <div class="sec13-table-data"><span class="template_var">{{ANNPOLIZ}}</span></div>
+            <div class="sec13-table-data"><span class="template_var">{{EDAD}}</span></div>
+            <div class="sec13-table-data"><span class="template_var">{{VALRES}}</span></div>
+            <div class="sec13-table-data"><span class="template_var">{{AHPLUSP}}</span></div>
+            <div class="sec13-table-data"><span class="template_var">{{CAPASEG}}</span></div>
+            <div class="sec13-table-data"><span class="template_var">{{QUITARES}}</span></div>
+            <span class="template_var">{{/each}}</span>
+          </div>
+          <p class="fr6">*El asegurado tendrá derecho a dichos valores garantizados siempre que el pago de las primas se realicen en el tiempo y forma pactada bajo las 
+condiciones originales.</p>
+          <p class="fr6">**El valor expresado en la columna de Quita por Rescate se aplica sobre la prima anual neta de
+            impuestos y sellados.</p>
+        </div>
+      </div>
+    
+      <div class="section section-09-medios-pago">
+        <div class="sec-header">Medios de Pago habilitados</div>
+        <div class="sec-content">
+          <div class="fr6">Los únicos sistemas habilitados para pagar premios de contratos de seguros son los
+            siguientes:</div>
+          <div class="fr6">a. Entidades especializadas en cobranza, registro y procesamiento de pagos por medios
+            electrónicos habilitados por la SUPERINTENDENCIA DE SEGUROS DE LA NACION.</div>
+          <div class="fr6">b. Entidades financieras sometidas al régimen de la Ley N° 21.526.</div>
+          <div class="fr6">c. Tarjetas de crédito, débito o compras emitidas en el marco de la Ley N° 25.065. Cheques
+            de terceros, los que deberán ser indefectiblemente endosados por el Asegurado o Tomador de la póliza.</div>
+          <div class="fr6">d. Efectivo en moneda de curso legal, mediante la utilización de un Controlador Fiscal
+            homologado por la ADMINISTRACION FEDERAL DE INGRESOS PUBLICOS y registrado ante la SUPERINTENDENCIA DE
+            SEGUROS DE LA NACION, únicamente hasta la suma máxima establecida en la normativa vigente.</div>
+          <div class="fr6">e. Cuando la percepción de premios se materialice a través del SISTEMA UNICO DE LA SEGURIDAD
+            SOCIAL (SUSS) se considerará cumplida la obligación establecida en el presente artí­culo.</div>
+        </div>
+      </div>
+
+      <div class="signature-block">
+        <div class="signature-image "><img src="./assets/images/firmas/jorge_valencia.jpg" alt="Firma" class="firma"></div>
+        <div class="signature-name"><span class="template_var">{{DS1.[0].NOMBFIRMA}}</span></div>
+        <div class="signature-role"><span class="template_var">{{DS1.[0].CARGOFIRM}}</span></div>
+        <div class="signature-note">
+          LA PRESENTE PÓLIZA SE SUSCRIBE MEDIANTE FIRMA FACSIMILAR CONFORME A LO PREVISTO EN EL PUNTO 7.8 DEL
+          REGLAMENTO GENERAL DE LA ACTIVIDAD ASEGURADORA.
+        </div>
+      </div>
+    <footer class="report-footer">
+      <div class="footer-left">
+        <img src="./assets/images/footers/LeyendaReti.png" alt="Galicia" class="footer-logo" />
+      </div>
+      <div class="footer-rigth" style="width: 55%; align-self: center; padding-left: 5px; font-size: 6pt;">
+        <p style="font-size: 8pt;" class="gray">Centro de Atención a Clientes</p>
+        <p style="font-size: 7pt;">
+          <img style=" width: 15px;" src="./assets/images/iconos/tel.jpg" alt=""> <span class="template_var">{{DS1.[0].TELE0810}}</span>
+          <img style="width: 15px;" src="./assets/images/iconos/arroba.png" alt=""> <span class="template_var">{{DS1.[0].CONTACTO}}</span>
+          <img style="width: 15px;" src="./assets/images/iconos/web.jpg" alt=""> <span class="template_var">{{DS1.[0].PAGWEBVI}}</span>
+        </p>
+        <p class="gray"><span class="template_var">{{DS1.[0].RAZONLEG}}</span></p>
+        <p><span class="template_var">{{DS1.[0].TELEFLEG}}</span></p>
+        <p><b> <span class="template_var">{{DS1.[0].DIRECLEG}}</span> <span class="template_var">{{DS1.[0].CPRLEG}}</span> <span class="template_var">{{DS1.[0].LOCALRLEG}}</span> <span class="template_var">{{DS1.[0].PCIARLEG}}</span> <span class="template_var">{{DS1.[0].PAISRLEG}}</span>
+            Argentina</b>
+        </p>
+      </div>
+    </div>
+  </footer>
+  </div>
+</body>
+</html>
+
+
