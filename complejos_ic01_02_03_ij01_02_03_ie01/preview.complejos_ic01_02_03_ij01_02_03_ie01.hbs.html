@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="./css/bloque-firma.css" />
 </head>
 
-<body>
+<body><style> .template_var {color: BlueViolet} </style>
   <div class="sheet-dynamic">
       <header class="report-header">
       <div class="header-top">
@@ -41,15 +41,15 @@
       <div class="header-band">
         <div class="header-band-item">
           <span class="header-band-label">Póliza Nº:</span>
-          <span class="header-band-value" class="gray">{{NYFM1170.[0].RAMOPCOD}}{{NYFM1170.[0].POLIZANN}}{{NYFM1170.[0].POLIZSEC}}</span>
+          <span class="header-band-value" class="gray"><span class="template_var">{{NYFM1170.[0].RAMOPCOD}}</span><span class="template_var">{{NYFM1170.[0].POLIZANN}}</span><span class="template_var">{{NYFM1170.[0].POLIZSEC}}</span></span>
         </div>
         <div class="header-band-item">
           <span class="header-band-label">Certificado Nº:</span>
-          <span class="header-band-value">{{NYFM1170.[0].CERTIPOL}}{{NYFM1170.[0].CERTIANN}}{{NYFM1170.[0].CERTISEC}}</span>
+          <span class="header-band-value"><span class="template_var">{{NYFM1170.[0].CERTIPOL}}</span><span class="template_var">{{NYFM1170.[0].CERTIANN}}</span><span class="template_var">{{NYFM1170.[0].CERTISEC}}</span></span>
         </div>
         <div class="header-band-item">
           <span class="header-band-label">Endoso Nº:</span>
-          <span class="header-band-value">{{NYFM1170.[0].SUPLENUM}}</span>
+          <span class="header-band-value"><span class="template_var">{{NYFM1170.[0].SUPLENUM}}</span></span>
         </div>
         <div class="header-band-item header-band-item-end">
           <span class="header-band-label">Original</span>
@@ -61,19 +61,19 @@
         <div class="sec-content">
           <div class="info-item fr3">
             <p>Endoso:</p>
-            <p class="gray">{{NYFM1170.[0].MOTEND}}</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].MOTEND}}</span></p>
           </div>
           <div class="info-item fr3">
             <p>Plan Contratado:</p>
-            <p class="gray">{{NYFM1170.[0].TITPLAN}}</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].TITPLAN}}</span></p>
           </div>
           <div class="info-item fr3">
             <p>Inicio de vigencia:</p>
-            <p class="gray">{{NYFM1170.[0].FECVIG}}</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].FECVIG}}</span></p>
           </div>
           <div class="info-item fr3">
             <p>Vencimiento de la póliza:</p>
-            <p class="gray">{{NYFM1170.[0].FECVTO}}</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].FECVTO}}</span></p>
           </div>
         </div>
       </div>
@@ -85,36 +85,36 @@
         <div class="sec-content">
           <div class="asesor-item fr3">
             <p class="bold">Código y número:</p>
-            <p class="gray">{{NYFM1170.[0].AGENTCLA}} {{NYFM1170.[0].AGENTCOD}}</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].AGENTCLA}}</span> <span class="template_var">{{NYFM1170.[0].AGENTCOD}}</span></p>
           </div>
           <div class="asesor-item fr3">
             <p class="bold">Nº Matrí­cula:</p>
-            <p class="gray">{{NYFM1170.[0].AGENTMAT}}</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].AGENTMAT}}</span></p>
           </div>
           <div class="asesor-item fr3">
             <p class="bold">Apellido y nombre:</p>
-            <p class="gray">{{NYFM1170.[0].AGENTNOM}}</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].AGENTNOM}}</span></p>
           </div>
           <div class="asesor-item fr3">
             <p class="bold">Oficina:</p>
-            <p class="gray">{{NYFM1170.[0].AGENTOFI}} {{NYFM1170.[0].CENTRNOM}}</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].AGENTOFI}}</span> <span class="template_var">{{NYFM1170.[0].CENTRNOM}}</span></p>
           </div>
         </div>
       </div>
 
       <!--seccion 3: Asegurado -->
     <div class="section">
-      {{#if (eq NYFM1170.[0].TOMANOM "" ) }}
+      <span class="template_var">{{#if (eq NYFM1170.[0].TOMANOM "" ) }}</span>
       <div class="sec-num"> 3/4 </div>
-      {{/if }}
+      <span class="template_var">{{/if }}</span>
 
       <div class="sec-header">
 
-        {{#if (ne NYFM1170.[0].TOMANOM "") }}
+        <span class="template_var">{{#if (ne NYFM1170.[0].TOMANOM "") }}</span>
         Tomador / Asegurado
-        {{else}}
+        <span class="template_var">{{else}}</span>
         Asegurado
-        {{/if}}
+        <span class="template_var">{{/if}}</span>
 
       </div>
       <div class="sec-content">
@@ -122,50 +122,50 @@
         <!-- Fila 1: nombre y apellido, tipo y nro de doc y fecha de nacimiento -->
         <div class="asegurado-item fr2">
           <p> Nombre y Apellido:</p>
-          <p class="gray"> {{NYFM1170.[0].ASEGNOM}}</p>
+          <p class="gray"> <span class="template_var">{{NYFM1170.[0].ASEGNOM}}</span></p>
         </div>
 
         <div class="asegurado-item fr2">
           <p> Tipo y N° de documento:</p>
-          <p class="gray"> {{NYFM1170.[0].ASEGDOC}}</p>
+          <p class="gray"> <span class="template_var">{{NYFM1170.[0].ASEGDOC}}</span></p>
         </div>
 
         <div class="asegurado-item fr2">
           <p> Fecha de Nacimiento:</p>
-          <p class="gray"> {{NYFM1170.[0].ASEGFNAC}}</p>
+          <p class="gray"> <span class="template_var">{{NYFM1170.[0].ASEGFNAC}}</span></p>
         </div>
 
 
         <!-- Fila 2: domicilio, numero, piso/depto -->
         <div class="asegurado-item fr2">
           <p> Domicilio:</p>
-          <p class="gray"> {{NYFM1170.[0].ASEGDOM}}</p>
+          <p class="gray"> <span class="template_var">{{NYFM1170.[0].ASEGDOM}}</span></p>
         </div>
         <div class="asegurado-item fr2">
           <p> Número:</p>
-          <p class="gray"> {{NYFM1170.[0].ASEGDNUM}}</p>
+          <p class="gray"> <span class="template_var">{{NYFM1170.[0].ASEGDNUM}}</span></p>
         </div>
 
         <div class="asegurado-item fr2">
           <p> Piso/Dpto.:</p>
-          <p class="gray">{{NYFM1170.[0].ASEGDPIS}} </p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].ASEGDPIS}}</span> </p>
         </div>
 
         <!-- fila 3: -->
 
         <div class="asegurado-item fr2">
           <p> Código Postal:</p>
-          <p class="gray">{{NYFM1170.[0].ASEGCPOS}} </p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].ASEGCPOS}}</span> </p>
         </div>
 
         <div class="asegurado-item fr2">
           <p> Localidad:</p>
-          <p class="gray">{{NYFM1170.[0].ASEGLOC}} </p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].ASEGLOC}}</span> </p>
         </div>
 
         <div class="asegurado-item fr2">
           <p> Provincia:</p>
-          <p class="gray">{{NYFM1170.[0].ASEGPROV}} </p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].ASEGPROV}}</span> </p>
         </div>
 
 
@@ -174,24 +174,24 @@
 
         <div class="asegurado-item fr2">
           <p> Teléfono:</p>
-          <p class="gray">{{NYFM1170.[0].POLITEL}} </p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].POLITEL}}</span> </p>
         </div>
 
         <div class="asegurado-item fr4">
           <p> Email:</p>
-          <p class="gray">{{NYFM1170.[0].POLIMAIL}} </p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].POLIMAIL}}</span> </p>
         </div>
 
         <!-- Fila 5: -->
 
         <div class="asegurado-item fr2">
           <p> Profesión:</p>
-          <p class="gray">{{NYFM1170.[0].ASEGPROF}} </p>
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].ASEGPROF}}</span> </p>
         </div>
 
         <div class="asegurado-item fr4">
           <p> Deporte:</p>
-          <p class="gray">{{NYFM1170.[0].ASEGDEPO}}
+          <p class="gray"><span class="template_var">{{NYFM1170.[0].ASEGDEPO}}</span>
 
 
 
@@ -201,27 +201,29 @@
         <!-- FOOTER -->
         <div class="asegurado-item fr1  input-radio">
           <p>
-            {{#if (eq NYFM1170.[0].ASEGDIES "Z" ) }}
+
+            ZURDO
+            <span class="template_var">{{#if (eq NYFM1170.[0].ASEGDIES "Z" ) }}</span>
             <input type="radio" checked />
-            {{else}}
+            <span class="template_var">{{else}}</span>
             <input type="radio" />
-            {{/if}}
+            <span class="template_var">{{/if}}</span>
 
           </p>
           <p> </p>
         </div>
         <div class="asegurado-item fr1 input-radio">
-          <p> 
-            {{#if (eq NYFM1170.[0].ASEGDIES "D" )}}
+          <p> DIESTRO:
+            <span class="template_var">{{#if (eq NYFM1170.[0].ASEGDIES "D" )}}</span>
             <input type="radio" checked />
-            {{else}}
+            <span class="template_var">{{else}}</span>
             <input type="radio" />
-            {{/if}}
+            <span class="template_var">{{/if}}</span>
           </p>
           <p> </p>
         </div>
         <div class="asegurado-item fr1">
-          <p> {{NYFM1170.[0].ASEGFUMA}}</p>
+          <p> <span class="template_var">{{NYFM1170.[0].ASEGFUMA}}</span></p>
           <p> </p>
         </div>
       </div>
@@ -234,39 +236,39 @@
         <div class="sec-content">
           <div class="text fr6">
             <p>Tipo de opción (2)</p>
-            <p class="gray">{{NYFM1171.[0].OPCIOCOD}} {{NYFM1171.[0].OPCIODES}}</p>
+            <p class="gray"><span class="template_var">{{NYFM1171.[0].OPCIOCOD}}</span> <span class="template_var">{{NYFM1171.[0].OPCIODES}}</span></p>
           </div>
           <div class="header fr6">
             <div>Cobertura Principal - Condiciones Generales</div>
             <div>Suma asegurada</div>
           </div>
-          {{#each M1171}}
+          <span class="template_var">{{#each M1171}}</span>
           <div class="sec6-row">
-            <div class="gray">{{COBERDES}}{{#if @root.M1162.[@index].CLAUSDES}} {{@root.M1162.[@index].CLAUSDES}}{{/if}}</div>
-            <div class="gray">{{SUMASEG}}</div>
+            <div class="gray"><span class="template_var">{{COBERDES}}</span><span class="template_var">{{#if @root.M1162.[@index].CLAUSDES}}</span> <span class="template_var">{{@root.M1162.[@index].CLAUSDES}}</span><span class="template_var">{{/if}}</span></div>
+            <div class="gray"><span class="template_var">{{SUMASEG}}</span></div>
           </div>
-          {{/each}}
+          <span class="template_var">{{/each}}</span>
           <div class="header fr6">Coberturas Adicionales</div>
-          {{#each M1171B}}
+          <span class="template_var">{{#each M1171B}}</span>
           <div class="sec6-row">
-            <div class="gray">{{COBERDES}}{{#if @root.M1162B.[@index].CLAUSDES}} {{@root.M1162B.[@index].CLAUSDES}}{{/if}}</div>
-            <div class="gray">{{SUMASEG}}</div>
+            <div class="gray"><span class="template_var">{{COBERDES}}</span><span class="template_var">{{#if @root.M1162B.[@index].CLAUSDES}}</span> <span class="template_var">{{@root.M1162B.[@index].CLAUSDES}}</span><span class="template_var">{{/if}}</span></div>
+            <div class="gray"><span class="template_var">{{SUMASEG}}</span></div>
           </div>
-          {{/each}}
+          <span class="template_var">{{/each}}</span>
         </div>
       </div>
 
       <div class="text">
         <div>
           FORMAN PARTE INTEGRANTE DE ESTA PÓLIZA LAS CONDICIONES GENERALES, PARTICULARES, LAS CLÁUSULAS ADICIONALES
-          QUE SE DETALLAN A CONTINUACIÓN, Y SUS ANEXOS I DE EXCLUSIONES DE COBERTURAS RESPECTIVAS : {{#each NYFM1165}}
-          {{CLAUSSUPL}}
-          {{/each}}
+          QUE SE DETALLAN A CONTINUACIÓN, Y SUS ANEXOS I DE EXCLUSIONES DE COBERTURAS RESPECTIVAS : <span class="template_var">{{#each NYFM1165}}</span>
+          <span class="template_var">{{CLAUSSUPL}}</span>
+          <span class="template_var">{{/each}}</span>
         </div>
         <div>
-        {{#each NYFM1171RF}}
-        <p>{{REFERTEX}}</p>
-        {{/each}}
+        <span class="template_var">{{#each NYFM1171RF}}</span>
+        <p><span class="template_var">{{REFERTEX}}</span></p>
+        <span class="template_var">{{/each}}</span>
         </div>
       </div>
 
@@ -280,14 +282,14 @@
           <div class="sec6-table-head">Parentesco</div>
           <div class="sec6-table-head">Orden</div>
           <div class="sec6-table-head">Porcentaje</div>
-          {{#each NYFM1172}}
-          <div class="sec6-table-data">{{BENNOM}}</div>
-          <div class="sec6-table-data">{{BENDOC}}</div>
-          <div class="sec6-table-data">{{BENNAC}}</div>
-          <div class="sec6-table-data">{{BENPARE}}</div>
-          <div class="sec6-table-data">{{BENORD}}</div>
-          <div class="sec6-table-data">{{BENPORC}}</div>
-          {{/each}}
+          <span class="template_var">{{#each NYFM1172}}</span>
+          <div class="sec6-table-data"><span class="template_var">{{BENNOM}}</span></div>
+          <div class="sec6-table-data"><span class="template_var">{{BENDOC}}</span></div>
+          <div class="sec6-table-data"><span class="template_var">{{BENNAC}}</span></div>
+          <div class="sec6-table-data"><span class="template_var">{{BENPARE}}</span></div>
+          <div class="sec6-table-data"><span class="template_var">{{BENORD}}</span></div>
+          <div class="sec6-table-data"><span class="template_var">{{BENPORC}}</span></div>
+          <span class="template_var">{{/each}}</span>
         </div>
 
       <div class="text">
@@ -324,19 +326,19 @@
         <div class="sec-content">
           <div class="item fr3">
             <p class="bold">Moneda del Contrato:</p>
-            <p class="gray">{{NYFM1170.[0].MONEDA}}</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].MONEDA}}</span></p>
           </div>
           <div class="item fr3">
             <p class="bold">Frecuencia de pago:</p>
-            <p class="gray">{{NYFM1170.[0].PAGOFREC}}</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].PAGOFREC}}</span></p>
           </div>
           <div class="item fr3">
             <p class="bold">Forma de Pago:</p>
-            <p class="gray">{{NYFM1170.[0].PAGOFORM}}</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].PAGOFORM}}</span></p>
           </div>
           <div class="item fr3">
             <p class="bold">Nº de cuenta:</p>
-            <p class="gray">{{NYFM1170.[0].CUENTANRO}}</p>
+            <p class="gray"><span class="template_var">{{NYFM1170.[0].CUENTANRO}}</span></p>
           </div>
         </div>
       </div>
@@ -347,23 +349,23 @@
         <div class="sec-content">
           <div class="sec8-table">
             <div class="bold">Prima Regular Neta</div>
-            <div class="bold">{{NYFM1173.[0].IMPOPRI}}</div>
+            <div class="bold"><span class="template_var">{{NYFM1173.[0].IMPOPRI}}</span></div>
             <div>Gastos de Explotación(*)</div>
-            <div>{{NYFM1173.[0].GASEXPIM1}}</div>
+            <div><span class="template_var">{{NYFM1173.[0].GASEXPIM1}}</span></div>
             <div>Gastos de Adquisición(*)</div>
-            <div>{{NYFM1173.[0].GASADQIM1}}</div>
+            <div><span class="template_var">{{NYFM1173.[0].GASADQIM1}}</span></div>
             <div>Costo Mensual Operativo</div>
-            <div>{{NYFM1173.[0].COSMENOPE}}</div>
+            <div><span class="template_var">{{NYFM1173.[0].COSMENOPE}}</span></div>
             <div>Costo de Financiamiento</div>
-            <div>{{NYFM1173.[0].COSFINAN}}</div>
+            <div><span class="template_var">{{NYFM1173.[0].COSFINAN}}</span></div>
             <div class="bold">Prima de Tarifa</div>
-            <div class="bold">{{NYFM1173.[0].IMPCUOME}}</div>
+            <div class="bold"><span class="template_var">{{NYFM1173.[0].IMPCUOME}}</span></div>
             <div>Impuestos y Sellados</div>
-            <div class="gray">{{NYFM1173.[0].IMPOIMSE}}</div>
+            <div class="gray"><span class="template_var">{{NYFM1173.[0].IMPOIMSE}}</span></div>
             <div class="bold">Premio periódico total hasta los 65 años</div>
-            <div class="bold">{{NYFM1173.[0].IMPOTOT}}</div>
+            <div class="bold"><span class="template_var">{{NYFM1173.[0].IMPOTOT}}</span></div>
             <div class="bold">Premio periódico total a partir de los 65 años</div>
-            <div class="bold">{{NYFM1173.[0].IMPOPRI65}}</div>
+            <div class="bold"><span class="template_var">{{NYFM1173.[0].IMPOPRI65}}</span></div>
           </div>
           <div class="sec8-table-text">(*) Los valores corrresponden al primer año</div>
         </div>
@@ -375,42 +377,42 @@
         <div class="sec-content">
           <div class="sec9-row bold">
             <div class="sec9-item-title">Prima de Ahorro Plus</div>
-            <div class="sec9-item-suma" class="gray">{{NYFM1173.[0].IMPOPLUS}}</div>
+            <div class="sec9-item-suma" class="gray"><span class="template_var">{{NYFM1173.[0].IMPOPLUS}}</span></div>
           </div>
           <div class="sec9-row">
             <div class="sec9-item-title">Gastos de Explotación(*)</div>
-            <div class="sec9-item-suma">{{NYFM1173.[0].GASEXPIM2}}</div>
+            <div class="sec9-item-suma"><span class="template_var">{{NYFM1173.[0].GASEXPIM2}}</span></div>
           </div>
           <div class="sec9-row">
             <div class="sec9-item-title">Gastos de Adquisición(*)</div>
-            <div class="sec9-item-suma">{{NYFM1173.[0].GASADQIM2}}</div>
+            <div class="sec9-item-suma"><span class="template_var">{{NYFM1173.[0].GASADQIM2}}</span></div>
           </div>
           <div class="sec9-row">
             <div class="sec9-item-title">Impuestos y Sellados</div>
-            <div class="sec9-item-suma">{{NYFM1173.[0].IMPOIMSE2}}</div>
+            <div class="sec9-item-suma"><span class="template_var">{{NYFM1173.[0].IMPOIMSE2}}</span></div>
           </div>
           <div class="sec9-row">
             <div class="sec9-item-title">Premio de ahorro plus periodico</div>
-            <div class="sec9-item-suma">{{NYFM1173.[0].IMPOPRIAH}}</div>
+            <div class="sec9-item-suma"><span class="template_var">{{NYFM1173.[0].IMPOPRIAH}}</span></div>
           </div>
           <div class="sec9-row">
             <div class="sec9-item-title bold">
               <div> Aporte Inicial</div>
-              <div> Cuenta individual: {{NYFM1173.[0].IMPOAPOCI}}</div>
+              <div> Cuenta individual: <span class="template_var">{{NYFM1173.[0].IMPOAPOCI}}</span></div>
             </div>
-            <div class="sec9-item-suma"><span class="bold">Cuenta especial: </span>{{NYFM1173.[0].IMPOAPOCE}}</div>
+            <div class="sec9-item-suma"><span class="bold">Cuenta especial: </span><span class="template_var">{{NYFM1173.[0].IMPOAPOCE}}</span></div>
           </div>
           <div class="sec9-row bold">
             <div class="sec9-item-title">Valor Total del Seguro(**)</div>
-            <div class="sec9-item-suma">{{NYFM1173.[0].IMPOTOT}}</div>
+            <div class="sec9-item-suma"><span class="template_var">{{NYFM1173.[0].IMPOTOT}}</span></div>
           </div>
           <div class="sec9-row">(*) Los valores corrresponden al primer año</div>
           <div class="sec9-row">(**) El valor total del seguro se compone de la suma entre el premio periódico total y
             el premio de ahorro periódico</div>
             <div>Cargo de cobranza:</div>
-            <div class="sec9-row">{{NYFM1173.[0].GTOADMADH}}</div>
+            <div class="sec9-row"><span class="template_var">{{NYFM1173.[0].GTOADMADH}}</span></div>
             <div class="sec9-row">Cargo de administración mensual:</div>
-            <div class="sec9-row">{{NYFM1173.[0].CARGOAHD}}</div>
+            <div class="sec9-row"><span class="template_var">{{NYFM1173.[0].CARGOAHD}}</span></div>
         </div>
       </div>
 
@@ -425,21 +427,21 @@
             usted realiza en su Cuenta Plus.
           </div>
           <div class="sec13-table">
-            <div class="sec13-table-header">Valor tasa garantizada: {{NYFM1173.[0].TASAGAR}} % Anual</div>
+            <div class="sec13-table-header">Valor tasa garantizada: <span class="template_var">{{NYFM1173.[0].TASAGAR}}</span> % Anual</div>
             <div class="sec13-table-head">Año</div>
             <div class="sec13-table-head">Edad</div>
             <div class="sec13-table-head">Valor Rescate (*)</div>
             <div class="sec13-table-head">Ahorro Plus<br />Proyectado</div>
             <div class="sec13-table-head">Capital<br />Asegurado</div>
             <div class="sec13-table-head">Quita por<br />Rescate (**)</div>
-            {{#each NYFM1176}}
-            <div class="sec13-table-data">{{ANNPOLIZ}}</div>
-            <div class="sec13-table-data">{{EDAD}}</div>
-            <div class="sec13-table-data">{{VALRES}}</div>
-            <div class="sec13-table-data">{{AHPLUSP}}</div>
-            <div class="sec13-table-data">{{CAPASEG}}</div>
-            <div class="sec13-table-data">{{QUITARES}}</div>
-            {{/each}}
+            <span class="template_var">{{#each NYFM1176}}</span>
+            <div class="sec13-table-data"><span class="template_var">{{ANNPOLIZ}}</span></div>
+            <div class="sec13-table-data"><span class="template_var">{{EDAD}}</span></div>
+            <div class="sec13-table-data"><span class="template_var">{{VALRES}}</span></div>
+            <div class="sec13-table-data"><span class="template_var">{{AHPLUSP}}</span></div>
+            <div class="sec13-table-data"><span class="template_var">{{CAPASEG}}</span></div>
+            <div class="sec13-table-data"><span class="template_var">{{QUITARES}}</span></div>
+            <span class="template_var">{{/each}}</span>
           </div>
           <p class="fr6">*El asegurado tendrá derecho a dichos valores garantizados siempre que el pago de las primas se realicen en el tiempo y forma pactada bajo las 
 condiciones originales.</p>
@@ -468,8 +470,8 @@ condiciones originales.</p>
 
       <div class="signature-block">
         <div class="signature-image "><img src="./assets/images/firmas/jorge_valencia.jpg" alt="Firma" class="firma"></div>
-        <div class="signature-name">{{DS1.[0].NOMBFIRMA}}</div>
-        <div class="signature-role">{{DS1.[0].CARGOFIRM}}</div>
+        <div class="signature-name"><span class="template_var">{{DS1.[0].NOMBFIRMA}}</span></div>
+        <div class="signature-role"><span class="template_var">{{DS1.[0].CARGOFIRM}}</span></div>
         <div class="signature-note">
           LA PRESENTE PÓLIZA SE SUSCRIBE MEDIANTE FIRMA FACSIMILAR CONFORME A LO PREVISTO EN EL PUNTO 7.8 DEL
           REGLAMENTO GENERAL DE LA ACTIVIDAD ASEGURADORA.
@@ -482,13 +484,13 @@ condiciones originales.</p>
       <div class="footer-rigth" style="width: 55%; align-self: center; padding-left: 5px; font-size: 6pt;">
         <p style="font-size: 8pt;" class="gray">Centro de Atención a Clientes</p>
         <p style="font-size: 7pt;">
-          <img style=" width: 15px;" src="./assets/images/iconos/tel.jpg" alt=""> {{DS1.[0].TELE0810}}
-          <img style="width: 15px;" src="./assets/images/iconos/arroba.png" alt=""> {{DS1.[0].CONTACTO}}
-          <img style="width: 15px;" src="./assets/images/iconos/web.jpg" alt=""> {{DS1.[0].PAGWEBVI}}
+          <img style=" width: 15px;" src="./assets/images/iconos/tel.jpg" alt=""> <span class="template_var">{{DS1.[0].TELE0810}}</span>
+          <img style="width: 15px;" src="./assets/images/iconos/arroba.png" alt=""> <span class="template_var">{{DS1.[0].CONTACTO}}</span>
+          <img style="width: 15px;" src="./assets/images/iconos/web.jpg" alt=""> <span class="template_var">{{DS1.[0].PAGWEBVI}}</span>
         </p>
-        <p class="gray">{{DS1.[0].RAZONLEG}}</p>
-        <p>{{DS1.[0].TELEFLEG}}</p>
-        <p><b> {{DS1.[0].DIRECLEG}} {{DS1.[0].CPRLEG}} {{DS1.[0].LOCALRLEG}} {{DS1.[0].PCIARLEG}} {{DS1.[0].PAISRLEG}}
+        <p class="gray"><span class="template_var">{{DS1.[0].RAZONLEG}}</span></p>
+        <p><span class="template_var">{{DS1.[0].TELEFLEG}}</span></p>
+        <p><b> <span class="template_var">{{DS1.[0].DIRECLEG}}</span> <span class="template_var">{{DS1.[0].CPRLEG}}</span> <span class="template_var">{{DS1.[0].LOCALRLEG}}</span> <span class="template_var">{{DS1.[0].PCIARLEG}}</span> <span class="template_var">{{DS1.[0].PAISRLEG}}</span>
             Argentina</b>
         </p>
       </div>
