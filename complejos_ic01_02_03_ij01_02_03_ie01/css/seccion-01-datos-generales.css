@@ -18,17 +18,18 @@ HTML fragment:
   margin: 14px 0;
   gap: 5px;
   page-break-inside: avoid;
+  margin-bottom: 0px;
 }
 
 .section.section-01-datos-generales .sec-num {
   grid-area: sec-num;
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border: 1px solid #000;
   text-align: center;
   align-content: center;
   font-weight: bold;
-  font-size: 11pt;
+  font-size: 13pt;
 }
 
 .section.section-01-datos-generales .sec-content {
