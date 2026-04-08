@@ -44,17 +44,6 @@ body {
   display: contents;
 }
 
-.section[class*="section-"] {
-  margin: 12px 0 !important;
-  gap: 4px !important;
-  page-break-inside: auto !important;
-  break-inside: auto !important;
-}
-
-.section[class*="section-"] .sec-header {
-  padding-left: 8px !important;
-}
-
 .report-policy {
   display: flex;
   flex-wrap: wrap;

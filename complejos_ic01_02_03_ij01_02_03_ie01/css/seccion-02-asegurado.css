@@ -22,13 +22,13 @@ HTML fragment:
 
 .sec-num {
   grid-area: sec-num;
-  border: 1px solid black;
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000;
   text-align: center;
   align-content: center;
   font-weight: bold;
-  font-size: 11pt;
+  font-size: 13pt;
 }
 
 .sec-header {
